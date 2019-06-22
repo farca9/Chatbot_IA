@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19b242a6-84eb-4d50-99e7-3a455590b377" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Core/DBInstance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modelo/Celular.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modelo/Notebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modelo/Tablet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modelo/Televisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NLP/Lema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NLP/NLPTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/Core/ChatbotCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/Core/ChatbotCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ChatbotCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ChatbotCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/DBInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Celular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Celular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Televisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Televisor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Chatbox.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Chatbox.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Chatbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Chatbox.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,29 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/Notebook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/Tablet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Celular.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="34">
+              <caret line="2" column="118" selection-start-line="2" selection-start-column="118" selection-end-line="2" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -65,12 +54,17 @@
         <option value="$PROJECT_DIR$/src/UI/Interfaz.java" />
         <option value="$PROJECT_DIR$/src/UI/Main.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Notebook.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Tablet.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Televisor.java" />
+        <option value="$PROJECT_DIR$/src/Core/DBInstance.java" />
+        <option value="$PROJECT_DIR$/src/Core/DB.java" />
         <option value="$PROJECT_DIR$/src/Core/ChatbotCore.java" />
         <option value="$PROJECT_DIR$/src/UI/Chatbox.form" />
         <option value="$PROJECT_DIR$/src/UI/Chatbox.java" />
+        <option value="$PROJECT_DIR$/src/NLP/NLPTool.java" />
+        <option value="$PROJECT_DIR$/src/NLP/Lema.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Celular.java" />
-        <option value="$PROJECT_DIR$/src/Modelo/Notebook.java" />
-        <option value="$PROJECT_DIR$/src/Modelo/Tablet.java" />
       </list>
     </option>
   </component>
@@ -117,6 +111,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Modelo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="NLP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="Chatbox" type="e9f4de52:FormNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -125,6 +138,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -174,12 +188,12 @@
       <updated>1561205770125</updated>
       <workItem from="1561205772810" duration="2787000" />
       <workItem from="1561208678306" duration="45000" />
-      <workItem from="1561208757692" duration="721000" />
+      <workItem from="1561208757692" duration="2663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3553000" />
+    <option name="totallyTimeSpent" value="5495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -194,7 +208,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20113315" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -230,16 +244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChatbotIA.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -247,27 +251,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
+    <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/DBInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Televisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="153">
+          <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1648#1816#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -278,17 +270,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Celular.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Modelo/Tablet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Televisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="14" selection-start-line="14" selection-end-line="28" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NLP/Lema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding>
+            <element signature="method#Lema#0;class#Lema#0" />
+            <element signature="method#match#0;class#Lema#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Celular.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="118" selection-start-line="2" selection-start-column="118" selection-end-line="2" selection-end-column="118" />
         </state>
       </provider>
     </entry>
@@ -347,6 +387,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

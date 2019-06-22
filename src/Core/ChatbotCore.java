@@ -4,12 +4,11 @@ public class ChatbotCore {
 
     //Singleton
     private static ChatbotCore instance = new ChatbotCore();
-
     public static ChatbotCore getInstance(){
         return instance;
     }
-
     private ChatbotCore(){}
+    //
 
     public String sendAndReceive(String input){
 

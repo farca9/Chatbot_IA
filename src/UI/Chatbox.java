@@ -1,11 +1,12 @@
 package UI;
 
 import Core.ChatbotCore;
-import sun.java2d.pipe.SpanShapeRenderer;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -14,6 +15,7 @@ public class Chatbox {
     private JTextArea inputTextArea;
     private JTextArea chatTextArea;
     public JPanel mainPanel;
+    private JButton clearButton;
     private SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 
     private void createUIComponents() {
@@ -28,7 +30,7 @@ public class Chatbox {
             public void actionPerformed(ActionEvent e) {
                 String input, output;
                 input = inputTextArea.getText();
-                inputTextArea.setText("");
+
 
                 chatTextArea.append("\n<< You ("+sdf.format(new Date())+"): "+input+"\n");
 
@@ -37,9 +39,31 @@ public class Chatbox {
 
                 chatTextArea.append("\n>> Bot ("+sdf.format(new Date())+"): "+output+"\n");
 
+                inputTextArea.setText("");
+
+
             }
         });
 
+        clearButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                inputTextArea.setText("");
+                chatTextArea.setText("Bienvenido al Asistente de Compras!!\n");
+
+                ChatbotCore.getInstance().clearChat();
+
+            }
+        });
+        inputTextArea.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode()==KeyEvent.VK_ENTER){
+                    sendButton.doClick(); //TODO FIX SIGUE APARECIENDO ENTER
+                }
+            }
+        });
     }
 
 }
