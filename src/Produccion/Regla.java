@@ -44,4 +44,14 @@ public class Regla {
         return true;
 
     }
+
+    public String execute(){
+
+        for(MTEntry mtEntry : mtEntriesConsecuencia){
+            MT.getInstance().add(mtEntry);
+        }
+
+        return mensajeOutput;
+    }
+
 }
