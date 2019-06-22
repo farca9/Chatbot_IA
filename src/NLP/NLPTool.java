@@ -1,6 +1,7 @@
 package NLP;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class NLPTool {
@@ -18,7 +19,6 @@ public class NLPTool {
 
         //TODO AGREGAR LOS LEMAS MANUALMENTE, JUNTO CON SUS SINONIMOS
         // lemas.add("Bueno", new ArrayList("Copado","Piola","Buenisimo",...)
-
     }
     //
 

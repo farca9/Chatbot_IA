@@ -12,6 +12,11 @@ public class Lema {
         this.sinonimos = sinonimos;
     }
 
+    @Override
+    public String toString() {
+        return concepto;
+    }
+
     public String getConcepto() {
         return concepto;
     }

@@ -1,5 +1,7 @@
 package Core;
 
+import NLP.NLPTool;
+
 public class ChatbotCore {
 
     //Singleton
@@ -12,13 +14,16 @@ public class ChatbotCore {
 
     public String sendAndReceive(String input){
 
+        String output="";
         //NLP -> Lemas
+        NLPTool nlp = NLPTool.getInstance();
+        output=nlp.detectarLemas(input).toString();
 
         //MT
 
         //MP
 
-        return "testString";
+        return output;
 
     }
 
