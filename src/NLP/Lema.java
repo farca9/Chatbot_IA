@@ -1,6 +1,7 @@
 package NLP;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Lema {
 
@@ -46,5 +47,18 @@ public class Lema {
         }
 
         return false;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Lema lema = (Lema) o;
+        return Objects.equals(concepto, lema.concepto);
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
     }
 }

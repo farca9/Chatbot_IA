@@ -23,4 +23,11 @@ public class MT {
         }
     }
 
+    public List<MTEntry> getElementosMT() {
+        return elementosMT;
+    }
+
+    public void setElementosMT(List<MTEntry> elementosMT) {
+        this.elementosMT = elementosMT;
+    }
 }
