@@ -1,5 +1,9 @@
 package Modelo;
 
+import Produccion.MTEntry;
+
+import java.util.List;
+
 public class Televisor {
 
     private String codigoModelo;
@@ -88,5 +92,54 @@ public class Televisor {
 
         return resultado;
 
+    }
+
+    public boolean filtrar(List<MTEntry> parametros) {
+        boolean flag = true;
+        int i = 0;
+
+        while (flag && i < parametros.size()) {
+            if (parametros.get(i).nombre.equals("marca")) {
+                if (!parametros.get(i).value.toString().equals(marca)) {
+                    flag = false;
+                }
+            }
+
+            if (parametros.get(i).nombre.equals("dimPantalla")) {
+                if (!parametros.get(i).value.toString().equals(dimPantalla)) {
+                    flag = false;
+                }
+            }
+
+            if (parametros.get(i).nombre.equals("tecnologia")) {
+                if(isSmart()){
+                    if (!parametros.get(i).value.toString().equals("smart")) {
+                        flag = false;
+                    }
+                }
+                else{
+                    if (!parametros.get(i).value.toString().equals("led")) {
+                        flag = false;
+                    }
+                }
+
+            }
+
+            if (parametros.get(i).nombre.equals("resolucion")) {
+                if (!parametros.get(i).value.toString().equals(resolucion)) {
+                    flag = false;
+                }
+            }
+
+
+            if (parametros.get(i).nombre.equals("precio")) {
+                if (!parametros.get(i).value.toString().equals(precio)) {
+                    flag = false;
+                }
+            }
+
+        }
+
+        return flag;
     }
 }
