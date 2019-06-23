@@ -1433,7 +1433,7 @@ public class MP {
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("smart"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tencologia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tecnologia"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("tecnologia", "smart"))),
                 "Perfecto. Buscare televisores SMART")); idp++;
@@ -1506,9 +1506,6 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "pequenio"))),
                 "Perfecto. Buscare con precios bajos")); idp++;
-
-
-
     }
     //
 

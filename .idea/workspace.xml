@@ -20,24 +20,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+            <state relative-caret-position="142">
+              <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
                 <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
-                <element signature="method#innerSendAndReceive#0;class#ChatbotCore#0" />
                 <element signature="method#solveConflict#0;class#ChatbotCore#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-158">
-              <caret line="1475" column="110" selection-start-line="1475" selection-start-column="110" selection-end-line="1475" selection-end-column="110" />
+            <state relative-caret-position="259">
+              <caret line="1442" column="20" lean-forward="true" selection-start-line="1442" selection-start-column="20" selection-end-line="1442" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#276#277#0" expanded="true" />
@@ -59,8 +58,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+            <state relative-caret-position="612">
+              <caret line="76" column="92" lean-forward="true" selection-start-line="76" selection-start-column="92" selection-end-line="76" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Modelo/Celular.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1475">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -93,8 +101,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/UI/Chatbox.java" />
         <option value="$PROJECT_DIR$/src/Core/ChatbotCore.java" />
-        <option value="$PROJECT_DIR$/src/NLP/NLPTool.java" />
         <option value="$PROJECT_DIR$/src/Produccion/MP.java" />
+        <option value="$PROJECT_DIR$/src/NLP/NLPTool.java" />
       </list>
     </option>
   </component>
@@ -217,12 +225,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561310378102</updated>
-      <workItem from="1561310389264" duration="1041000" />
+      <workItem from="1561310389264" duration="1779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2009000" />
+    <option name="totallyTimeSpent" value="2747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -298,20 +306,6 @@
     <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
-            <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
-            <element signature="method#innerSendAndReceive#0;class#ChatbotCore#0" />
-            <element signature="method#solveConflict#0;class#ChatbotCore#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -326,17 +320,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+    <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+        <state relative-caret-position="142">
+          <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
+            <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
+            <element signature="method#solveConflict#0;class#ChatbotCore#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="1475" column="110" selection-start-line="1475" selection-start-column="110" selection-end-line="1475" selection-end-column="110" />
+        <state relative-caret-position="259">
+          <caret line="1442" column="20" lean-forward="true" selection-start-line="1442" selection-start-column="20" selection-end-line="1442" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#276#277#0" expanded="true" />
@@ -351,6 +351,20 @@
             <element signature="method#cargarReglasCelulares#0;class#MP#0" />
             <element signature="method#cargarReglasTablets#0;class#MP#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="76" column="92" lean-forward="true" selection-start-line="76" selection-start-column="92" selection-end-line="76" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Celular.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1475">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>

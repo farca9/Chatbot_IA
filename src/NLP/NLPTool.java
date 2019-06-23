@@ -18,7 +18,7 @@ public class NLPTool {
 
         lemas = new ArrayList<>();
 
-        lemas.add(new Lema("notebook", new ArrayList<>(Arrays.asList("computadora","ordenador","laptop","portatil"))));
+        lemas.add(new Lema("notebook", new ArrayList<>(Arrays.asList("computadora","ordenador","laptop","portatil", "compu"))));
         lemas.add(new Lema("celular", new ArrayList<>(Arrays.asList("smartphone","telefono","movil"))));
         lemas.add(new Lema("tablet", new ArrayList<>(Arrays.asList("tableta"))));
         lemas.add(new Lema("televisor", new ArrayList<>(Arrays.asList("tv","television"))));
@@ -65,9 +65,9 @@ public class NLPTool {
         lemas.add(new Lema("ram", new ArrayList<>(Arrays.asList("ram"))));
         lemas.add(new Lema("precio", new ArrayList<>(Arrays.asList("gastar","presupuesto","monto","estiro","gasto","$"))));
         lemas.add(new Lema("camara", new ArrayList<>(Arrays.asList("resolucion camara"))));
-        lemas.add(new Lema("grande", new ArrayList<>(Arrays.asList("gran","amplia","larga","extensa","mucho","alto","abundante","bastante","alta","ilimitado", "mucha"))));
+        lemas.add(new Lema("grande", new ArrayList<>(Arrays.asList("gran","amplia","larga","extensa","mucho","alto","abundante","bastante","alta","ilimitado", "mucha", "gigante"))));
         lemas.add(new Lema("normal", new ArrayList<>(Arrays.asList("media","normal","estandar","promedio","regular","medio"))));
-        lemas.add(new Lema("pequenio", new ArrayList<>(Arrays.asList("pequeña","pequeño","reducida","limitado","escaso","corta","economica","barata","economico","barato", "poca", "limitada","escasa", "poco"))));
+        lemas.add(new Lema("pequenio", new ArrayList<>(Arrays.asList("pequeña","pequeño","reducida","limitado","escaso","corta","economica","barata","economico","barato", "poca", "limitada","escasa", "poco", "no grande", "pequenia", "pequenio"))));
 
         lemas.add(new Lema("gpu", new ArrayList<>(Arrays.asList("placa de video","graficas"))));
         lemas.add(new Lema("integrada", new ArrayList<>(Arrays.asList("intel graphics","amd"))));
