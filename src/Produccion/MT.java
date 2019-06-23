@@ -27,6 +27,10 @@ public class MT {
         return elementosMT;
     }
 
+    public void clear(){
+        elementosMT=new ArrayList<>();
+    }
+
     public void setElementosMT(List<MTEntry> elementosMT) {
         this.elementosMT = elementosMT;
     }

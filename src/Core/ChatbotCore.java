@@ -23,6 +23,29 @@ public class ChatbotCore {
     private ChatbotCore(){}
     //
 
+    public String hacerRecomendacion(){
+
+        //Cuando el cliente presiona el boton de recomendar resultados
+        //Se asume que cuanto mucho se ofrecen 3 productos
+        List<MTEntry> mt = MT.getInstance().getElementosMT();
+
+        if(mt.contains(new MTEntry("tipoProducto","notebook"))){
+
+        } else if(mt.contains(new MTEntry("tipoProducto","celular"))) {
+
+        } else if (mt.contains(new MTEntry("tipoProducto","tablet"))) {
+
+        } else if (mt.contains(new MTEntry("tipoProducto","televisor"))) {
+
+        } else {
+
+            return "Lo lamento, no he podido encontrar ningun resultado";
+
+        }
+
+        return "asd";
+    }
+
     public String sendAndReceive(String input){
 
         String output="";
@@ -38,13 +61,17 @@ public class ChatbotCore {
             }
         }
 
-        System.out.println(reglasActivas);
+        System.out.println("Reglas activas:\n");
+        for(Regla r: reglasActivas) {
+            System.out.println(r.toString() + "\n");
+        }
 
         //Resolucion de conflictos
         Regla reglaSeleccionada = this.solveConflict(reglasActivas);
+        System.out.println("Regla seleccionada: "+reglaSeleccionada.toString());
 
         //Ejecucion
-
+        output=reglaSeleccionada.execute();
 
         return output;
 
@@ -118,7 +145,7 @@ public class ChatbotCore {
     }
 
     public void clearChat(){
-        //TODO Esta funcion deberia entre otras cosas borrar la memoria de trabajo
+        MT.getInstance().clear();
     }
 
 }
