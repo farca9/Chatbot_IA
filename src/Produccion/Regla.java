@@ -32,6 +32,10 @@ public class Regla {
 
     public boolean cotejar(ArrayList<Lema> lemasInput){
 
+        if(lemasInput.isEmpty() && !this.lemasCondicion.isEmpty()){
+            return false;
+        }
+
         //TODO VER SI DEJAR CONTAINS O EQUALS
 
         //Primero se controla la verificacion entre los lemas que necesito y los que estan
