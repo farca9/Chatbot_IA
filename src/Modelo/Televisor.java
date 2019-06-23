@@ -137,7 +137,7 @@ public class Televisor {
                     flag = false;
                 }
             }
-
+            i++;
         }
 
         return flag;
