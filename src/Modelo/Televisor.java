@@ -144,6 +144,9 @@ public class Televisor {
     }
 
     public String toString(){
-        return "\nMODELO: " + codigoModelo + "\nMARCA: " + marca + "\nPRECIO: $" + precio + "\n";
+        String smart;
+        if(isSmart()) smart = "Es un Smart de ";
+        else smart = "Es un LED de ";
+        return "\n" + this.marca+" "+this.codigoModelo+": \n"+smart+this.dimPantalla+"'', con una resolución "+this.resolucion+". \nSu precio es de $"+this.precio+".\n";
     }
 }
