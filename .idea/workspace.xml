@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9bb6f8e-a9a1-47ae-ac96-88117b73f168" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Core/ChatbotCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ChatbotCore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modelo/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Notebook.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/res/bernard.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/Core/ChatbotCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/Core/ChatbotCore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/Core/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/Core/DB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/Produccion/MP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/Produccion/MP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Chatbox.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Chatbox.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Chatbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Chatbox.java" afterDir="false" />
+>>>>>>> develop
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +56,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="548">
               <caret line="85" column="58" lean-forward="true" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
               <folding>
@@ -51,43 +64,48 @@
                 <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
                 <element signature="e#6765#6766#0" expanded="true" />
                 <element signature="e#6805#6806#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/DB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="138" column="45" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
+=======
+            <state relative-caret-position="1093">
+              <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8590#8591#0" expanded="true" />
-                <element signature="e#8654#8655#0" expanded="true" />
-                <element signature="e#8702#8703#0" expanded="true" />
-                <element signature="e#8747#8748#0" expanded="true" />
-                <element signature="e#8781#8782#0" expanded="true" />
-                <element signature="e#8842#8843#0" expanded="true" />
-                <element signature="e#8888#8889#0" expanded="true" />
-                <element signature="e#8931#8932#0" expanded="true" />
-                <element signature="e#8964#8965#0" expanded="true" />
-                <element signature="e#9022#9023#0" expanded="true" />
-                <element signature="e#9066#9067#0" expanded="true" />
-                <element signature="e#9115#9116#0" expanded="true" />
-                <element signature="e#9151#9152#0" expanded="true" />
-                <element signature="e#9218#9219#0" expanded="true" />
-                <element signature="e#9268#9269#0" expanded="true" />
-                <element signature="e#9319#9320#0" expanded="true" />
-                <element signature="e#9357#9358#0" expanded="true" />
+                <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
+                <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
+                <element signature="e#529#591#0" />
+                <element signature="e#5875#5876#0" expanded="true" />
+                <element signature="e#5915#5916#0" expanded="true" />
+>>>>>>> develop
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+        <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="-10">
+              <caret line="138" column="45" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
+=======
+            <state>
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
+>>>>>>> develop
+              <folding>
+                <element signature="e#950#1432#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NLP/Lema.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="646">
               <caret line="70" column="206" selection-start-line="70" selection-start-column="206" selection-end-line="70" selection-end-column="206" />
               <folding>
@@ -95,41 +113,36 @@
                 <element signature="e#255#256#0" expanded="true" />
                 <element signature="e#286#287#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="68">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> develop
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/Notebook.java">
+        <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="432">
               <caret line="185" column="16" lean-forward="true" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="221">
+              <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+>>>>>>> develop
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1288">
-              <caret line="407" column="121" selection-start-line="407" selection-start-column="107" selection-end-line="407" selection-end-column="121" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="method#cargarReglasGenerales#0;class#MP#0" />
-                <element signature="method#cargarReglasCelulares#0;class#MP#0" />
-                <element signature="method#cargarReglasTablets#0;class#MP#0" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="20" column="104" selection-start-line="20" selection-start-column="104" selection-end-line="20" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -142,18 +155,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/UI/Chatbox.form" />
         <option value="$PROJECT_DIR$/src/UI/Chatbox.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/Core/DB.java" />
         <option value="$PROJECT_DIR$/src/Core/ChatbotCore.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Notebook.java" />
+=======
+        <option value="$PROJECT_DIR$/src/UI/Chatbox.form" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+>>>>>>> develop
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1088" />
+    <option name="x" value="-515" />
+    <option name="y" value="-19" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -182,6 +200,7 @@
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
             </path>
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
@@ -212,6 +231,9 @@
               <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+>>>>>>> develop
             </path>
           </expand>
           <select />
@@ -221,11 +243,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561317119970" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+=======
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Git\Chatbot_IA\Chatbot_IA\src\res" />
+    </key>
+>>>>>>> develop
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -257,22 +288,13 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e9bb6f8e-a9a1-47ae-ac96-88117b73f168" name="Default Changelist" comment="" />
-      <created>1561310378102</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1561310378102</updated>
-      <workItem from="1561310389264" duration="1779000" />
-    </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5325000" />
+    <option name="totallyTimeSpent" value="2399000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -288,7 +310,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.2549575" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -306,10 +328,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Produccion/Regla.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -318,32 +338,31 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exceptions/NoLemasException.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+>>>>>>> develop
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="221">
+          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/NoRulesException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/toki.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NLP/Lema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="76" column="92" lean-forward="true" selection-start-line="76" selection-start-column="92" selection-end-line="76" selection-end-column="92" />
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/javax/swing/text/GapContent.java" />
     <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="124">
           <caret line="161" column="98" selection-start-line="161" selection-start-column="98" selection-end-line="161" selection-end-column="98" />
         </state>
@@ -434,12 +453,19 @@
             <element signature="method#cargarReglasGenerales#0;class#MP#0" />
             <element signature="method#cargarReglasCelulares#0;class#MP#0" />
             <element signature="method#cargarReglasTablets#0;class#MP#0" />
+=======
+        <state>
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+          <folding>
+            <element signature="e#950#1432#1" />
+>>>>>>> develop
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="646">
           <caret line="70" column="206" selection-start-line="70" selection-start-column="206" selection-end-line="70" selection-end-column="206" />
           <folding>
@@ -447,11 +473,16 @@
             <element signature="e#255#256#0" expanded="true" />
             <element signature="e#286#287#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="204">
+          <caret line="20" column="104" selection-start-line="20" selection-start-column="104" selection-end-line="20" selection-end-column="104" />
+>>>>>>> develop
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/DB.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-10">
           <caret line="138" column="45" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
           <folding>
@@ -486,10 +517,22 @@
             <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
             <element signature="e#6765#6766#0" expanded="true" />
             <element signature="e#6805#6806#0" expanded="true" />
+=======
+        <state relative-caret-position="1093">
+          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
+            <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
+            <element signature="e#529#591#0" />
+            <element signature="e#5875#5876#0" expanded="true" />
+            <element signature="e#5915#5916#0" expanded="true" />
+>>>>>>> develop
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
   </component>
   <component name="masterDetails">
     <states>
@@ -561,5 +604,7 @@
         </settings>
       </state>
     </states>
+=======
+>>>>>>> develop
   </component>
 </project>
