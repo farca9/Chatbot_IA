@@ -191,6 +191,6 @@ public class Celular {
 
 
     public String toString(){
-        return "\nMODELO: " + codigoModelo + "\nMARCA: " + marca + "\nPRECIO: $" + precio + "\n";
+        return "\n" + this.marca+" "+this.codigoModelo+": \nPosee "+this.cantidadRam+" GB de RAM, "+this.cantidadStorage+" de almacenamiento, una pantalla de "+this.dimPantalla+"'' y una cámara de "+this.resolucionCamara+" MP. \nSu precio es de $"+this.precio+".\n";
     }
 }
