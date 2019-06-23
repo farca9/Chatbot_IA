@@ -75,7 +75,7 @@ public class NLPTool {
 
         lemas.add(new Lema("tecnologia",new ArrayList<>(Arrays.asList("smart","led"))));
         lemas.add(new Lema("smart", new ArrayList<>(Arrays.asList("smart","inteligente"))));
-        lemas.add(new Lema("led", new ArrayList<>(Arrays.asList("led"))));
+        lemas.add(new Lema("led", new ArrayList<>(Arrays.asList("led", "lcd"))));
 
         lemas.add(new Lema("resolucion",new ArrayList<>(Arrays.asList("pixelado"))));
         lemas.add(new Lema("fhd", new ArrayList<>(Arrays.asList("full hd","full"))));
