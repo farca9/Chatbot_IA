@@ -1,6 +1,12 @@
 package Core;
 
+import NLP.Lema;
 import NLP.NLPTool;
+import Produccion.MP;
+import Produccion.Regla;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ChatbotCore {
 
@@ -17,11 +23,22 @@ public class ChatbotCore {
         String output="";
         //NLP -> Lemas
         NLPTool nlp = NLPTool.getInstance();
-        output=nlp.detectarLemas(input).toString();
+        List<Lema> lemasDetectados=nlp.detectarLemas(input);
 
-        //MT
+        //Cotejo
+        List<Regla> reglasActivas=new ArrayList<>();
+        for(Regla regla : MP.getInstance().getReglas()){
+            if(regla.cotejar((ArrayList)lemasDetectados)){
+                reglasActivas.add(regla);
+            }
+        }
 
-        //MP
+        System.out.println(reglasActivas);
+
+        //Resolucion de conflictos
+
+        //Ejecucion
+
 
         return output;
 

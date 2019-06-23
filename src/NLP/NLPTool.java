@@ -34,4 +34,8 @@ public class NLPTool {
 
         return lemasDetectados;
     }
+
+    public List<Lema> getLemas() {
+        return lemas;
+    }
 }

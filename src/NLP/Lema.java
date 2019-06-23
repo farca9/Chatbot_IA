@@ -1,5 +1,6 @@
 package NLP;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -11,6 +12,11 @@ public class Lema {
     public Lema(String concepto, List<String> sinonimos) {
         this.concepto = concepto;
         this.sinonimos = sinonimos;
+    }
+
+    public Lema(String concepto){
+        this.concepto=concepto;
+        this.sinonimos=new ArrayList<>();
     }
 
     @Override
@@ -48,6 +54,8 @@ public class Lema {
 
         return false;
     }
+
+
 
     @Override
     public boolean equals(Object o) {

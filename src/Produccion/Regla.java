@@ -17,6 +17,15 @@ public class Regla {
     private List<MTEntry> mtEntriesConsecuencia;
     private String mensajeOutput;
 
+    public Regla(Integer id, List<Lema> lemasCondicion, List<MTEntry> mtEntriesPresente, List<MTEntry> mtEntriesAusente, List<MTEntry> mtEntriesConsecuencia, String mensajeOutput) {
+        this.id = id;
+        this.lemasCondicion = lemasCondicion;
+        this.mtEntriesPresente = mtEntriesPresente;
+        this.mtEntriesAusente = mtEntriesAusente;
+        this.mtEntriesConsecuencia = mtEntriesConsecuencia;
+        this.mensajeOutput = mensajeOutput;
+    }
+
     public int getEspecificidad(){
         return lemasCondicion.size()+mtEntriesPresente.size()+mtEntriesAusente.size();
     }
