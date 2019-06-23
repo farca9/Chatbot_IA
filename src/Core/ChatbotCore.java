@@ -122,7 +122,7 @@ public class ChatbotCore {
 
         System.out.println("Reglas activas:");
         for(Regla r: reglasActivas) {
-            System.out.println(r.toString());
+            System.out.println(r.toShortString());
         }
 
         //Resolucion de conflictos
