@@ -16,6 +16,7 @@ public class Chatbox {
     private JTextArea chatTextArea;
     public JPanel mainPanel;
     private JButton clearButton;
+    private JButton recomendarButton;
     private SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 
     private void createUIComponents() {
@@ -54,6 +55,9 @@ public class Chatbox {
 
                 ChatbotCore.getInstance().clearChat();
 
+                sendButton.setEnabled(true);
+                recomendarButton.setEnabled(true);
+
             }
         });
         inputTextArea.addKeyListener(new KeyAdapter() {
@@ -62,6 +66,19 @@ public class Chatbox {
                 if(e.getKeyCode()==KeyEvent.VK_ENTER){
                     sendButton.doClick(); //TODO FIX SIGUE APARECIENDO ENTER
                 }
+            }
+        });
+        recomendarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                inputTextArea.setText("");
+
+                String output = ChatbotCore.getInstance().hacerRecomendacion();
+
+                chatTextArea.append("\n>> Bot ("+sdf.format(new Date())+"): "+output+"\n");
+
+                sendButton.setEnabled(false);
+                recomendarButton.setEnabled(false);
             }
         });
     }
