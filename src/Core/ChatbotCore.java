@@ -13,7 +13,9 @@ import Produccion.MT;
 import Produccion.MTEntry;
 import Produccion.Regla;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -52,12 +54,8 @@ public class ChatbotCore {
         //Cuando el cliente presiona el boton de recomendar resultados
         //Se asume que cuanto mucho se ofrecen 3 productos
         List<MTEntry> mt = MT.getInstance().getElementosMT();
-        /*List<Notebook> notebookResults = new ArrayList<Notebook>();
-        List<Celular> celularResults = new ArrayList<Celular>();
-        List<Tablet> tabletResults = new ArrayList<Tablet>();
-        List<Televisor> televisorResults = new ArrayList<Televisor>();*/
         DB dbInstance = DB.getInstance();
-        String results = "RESULTADOS:\n==========\n";
+        String results = ">> Bernard (" + new SimpleDateFormat("HH:mm").format(new Date()) + "): Estos son los modelos que te puedo recomendar:";
 
         if(mt.contains(new MTEntry("tipoProducto","notebook"))) {
 
@@ -91,7 +89,7 @@ public class ChatbotCore {
         }
         else {
 
-            return "Lo lamento, no he podido encontrar ningun resultado";
+            results = ">> Bernard (" + new SimpleDateFormat("HH:mm").format(new Date()) + "): Lo lamento, no he podido encontrar ningun resultado :(";
         }
 
         return results;
