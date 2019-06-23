@@ -41,6 +41,9 @@
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="method#cargarReglasComputadora#0;class#MP#0" />
               </folding>
             </state>
           </provider>
@@ -92,7 +95,7 @@
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
@@ -239,6 +242,20 @@
           <folding>
             <element signature="e#1199#1200#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Produccion/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Produccion/MTEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
