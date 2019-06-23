@@ -1,48 +1,9 @@
 
 Inner Reglas activas: R#1 
 Criterios de resolucion utilizados: (Especificidad)
-Inner Regla seleccionada: R#1 [] <!ask(tipoProducto), !ans(tipoProducto)> --> <ask(tipoProducto)> 'Que producto esta buscando?'
-[tablet]
+Inner Regla seleccionada: R#1 [] <!ask(user), !ans(user)> --> <ask(user)> 'Es usted cliente o vendedor?'
+[cliente]
 
-Reglas activas: R#4 R#128 R#129 R#130 R#131 R#133 
-Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: R#4 [tablet] <ask(tipoProducto), !ans(tipoProducto)> --> <ans(tipoProducto), tipoProducto(tablet)> 'Perfecto, buscaremos tablets'
-
-Inner Reglas activas: R#134 R#135 R#136 R#137 R#138 R#139 
+Reglas activas: R#2 R#3 
 Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#135 [] <tipoProducto(tablet), !ans(dimPantalla), !ask(dimPantalla)> --> <ask(dimPantalla)> 'Quiere una pantalla grande, mediana o chica?'
-[normal]
-
-Reglas activas: R#168 R#169 
-Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Regla seleccionada: R#169 [normal] <tipoProducto(tablet), ask(dimPantalla), !ans(dimPantalla)> --> <ans(dimPantalla), dimPantalla(normal)> 'Buenisimo! Buscare tablets con pantalla normal'
-
-Inner Reglas activas: R#134 R#136 R#137 R#138 R#139 
-Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#137 [] <tipoProducto(tablet), !ans(almacenamiento), !ask(almacenamiento)> --> <ask(almacenamiento)> 'Cuanto almacenamiento quiere? Mucho, poco o normal?'
-
-Inner Reglas activas: R#1 
-Criterios de resolucion utilizados: (Especificidad)
-Inner Regla seleccionada: R#1 [] <!ask(tipoProducto), !ans(tipoProducto)> --> <ask(tipoProducto)> 'Que producto esta buscando?'
-[tablet]
-
-Reglas activas: R#4 R#128 R#129 R#130 R#131 R#133 
-Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: R#4 [tablet] <ask(tipoProducto), !ans(tipoProducto)> --> <ans(tipoProducto), tipoProducto(tablet)> 'Perfecto, buscaremos tablets'
-
-Inner Reglas activas: R#134 R#135 R#136 R#137 R#138 R#139 
-Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#136 [] <tipoProducto(tablet), !ans(ram), !ask(ram)> --> <ask(ram)> 'Cuanta RAM quiere? Mucha, media o poca?'
-
-Inner Reglas activas: R#1 
-Criterios de resolucion utilizados: (Especificidad)
-Inner Regla seleccionada: R#1 [] <!ask(tipoProducto), !ans(tipoProducto)> --> <ask(tipoProducto)> 'Que producto esta buscando?'
-[celular]
-
-Reglas activas: R#3 R#76 R#77 R#78 R#79 R#81 
-Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: R#3 [celular] <ask(tipoProducto), !ans(tipoProducto)> --> <ans(tipoProducto), tipoProducto(celular)> 'Perfecto, buscaremos celulares'
-
-Inner Reglas activas: R#82 R#83 R#84 R#85 R#86 R#87 
-Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#86 [] <tipoProducto(celular), !ans(camara), !ask(camara)> --> <tipoProducto(celular), ask(camara)> 'Quiere la camara con alta o baja resolucion?'
+Regla seleccionada: R#3 [cliente] <ask(user), !ans(user)> --> <user(vendedor)> 'Bienvenido vendedor, ingrese que producto quiere y que caracteristica'

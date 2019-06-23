@@ -18,6 +18,9 @@ public class NLPTool {
 
         lemas = new ArrayList<>();
 
+        lemas.add(new Lema("vendedor",new ArrayList<>(Arrays.asList(" vendedora ", " vendedor ", " venta ", " empleado ", " empleada "))));
+        lemas.add(new Lema("cliente", new ArrayList<>(Arrays.asList(" cliente "," clienta "," comprador ", " compradora "))));
+
         lemas.add(new Lema("notebook", new ArrayList<>(Arrays.asList(" computadora"," ordenador"," laptop"," portatil", " compu"))));
         lemas.add(new Lema("celular", new ArrayList<>(Arrays.asList(" smartphone"," telefono"," movil", " celu "))));
         lemas.add(new Lema("tablet", new ArrayList<>(Arrays.asList(" tableta"))));

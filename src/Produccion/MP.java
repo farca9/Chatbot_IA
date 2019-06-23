@@ -20,15 +20,7 @@ public class MP {
     }
     private MP(){
         reglas=new ArrayList<>();
-
-        if(ChatbotCore.modoCliente) {
-            cargarReglas();
-
-        } else {
-
-            cargarReglasVendedor();
-
-        }
+        cargarReglas();
 
     }
 
@@ -53,15 +45,43 @@ public class MP {
         cargarReglasCelulares();
         cargarReglasTablets();
         cargarReglasTelevisores();
+        cargarReglasVendedor();
 
     }
 
     private void cargarReglasGenerales() {
 
+        //Primera, pregunta si es cliente o vendedor
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "user"), new MTEntry("ans", "user"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "user"))),
+                "Es usted cliente o vendedor?")); idp++;
+
+        //Respuesta, es vendedor o cliente
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("cliente"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "user"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "user"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "cliente"))),
+                "Bienvenido cliente")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "user"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "user"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))), //TODO ADD
+                "Bienvenido vendedor, ingrese que producto quiere y que caracteristica")); idp++;
+
+        //
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"), new MTEntry("ans", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
                 "Que producto esta buscando?")); idp++;
@@ -69,7 +89,7 @@ public class MP {
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "notebook"))),
                 "Perfecto, buscaremos computadoras portatiles")); idp++;
@@ -77,7 +97,7 @@ public class MP {
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("celular"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "celular"))),
                 "Perfecto, buscaremos celulares")); idp++;
@@ -85,7 +105,7 @@ public class MP {
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("tablet"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "tablet"))),
                 "Perfecto, buscaremos tablets")); idp++;
@@ -93,13 +113,10 @@ public class MP {
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("televisor"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "televisor"))),
                 "Perfecto, buscaremos televisores")); idp++;
-
-
-
 
     }
 
