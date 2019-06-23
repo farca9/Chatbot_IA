@@ -32,7 +32,7 @@ public class Regla {
 
     public boolean cotejar(ArrayList<Lema> lemasInput){
 
-        if(lemasInput.isEmpty() && !this.lemasCondicion.isEmpty()){
+        if(!lemasInput.isEmpty() && this.lemasCondicion.isEmpty()){
             return false;
         }
 

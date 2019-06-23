@@ -18,15 +18,5 @@ public class Main {
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
 
-        Regla r =new Regla(
-                1,
-                new ArrayList<>(Arrays.asList(new Lema("notebook"))),
-                new ArrayList<>(),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("tipoProducto", null))),
-                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("ask", "marca"))),
-                "Que marca quiere?");
-
-        System.out.println(r.toString());
-
     }
 }

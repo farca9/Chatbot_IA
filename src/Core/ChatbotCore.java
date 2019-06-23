@@ -61,9 +61,9 @@ public class ChatbotCore {
             }
         }
 
-        System.out.println("Reglas activas:\n");
+        System.out.println("Reglas activas:");
         for(Regla r: reglasActivas) {
-            System.out.println(r.toString() + "\n");
+            System.out.println(r.toString());
         }
 
         //Resolucion de conflictos
@@ -123,7 +123,7 @@ public class ChatbotCore {
         }
 
         //Prioridad
-        int candidatePriority=Integer.MAX_VALUE;
+        /*int candidatePriority=Integer.MAX_VALUE;
         for(Regla r: aux1){
             if(r.getId()<candidatePriority){
                 candidatePriority=r.getId().intValue();
@@ -137,6 +137,8 @@ public class ChatbotCore {
         }
 
         aux1=aux2;
+        */
+
 
         if(aux1.isEmpty()) return null;
 
