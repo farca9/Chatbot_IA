@@ -25,6 +25,10 @@ public class MP {
     }
 
     private void cargarReglasVendedor() {
+        cargarReglasComputadorasVendedor();
+
+
+
     }
 
     public void add(Regla regla){
@@ -2288,6 +2292,84 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "pequenio"))),
                 "Buenisimo! Buscare televisores con precios bajos")); idp++;
+    }
+
+    public void cargarReglasComputadorasVendedor(){
+
+        //MARCA
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("acer"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "acer"))),
+                "")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("asus"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "asus"))),
+                "")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("exo"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "exo"))),
+                "")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("hp"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "hp"))),
+                "")); idp++;
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("lenovo"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "lenovo"))),
+                "")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("apple"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "apple"))),
+                "")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("bangho"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "bangho"))),
+                "")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("dell"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "dell"))),
+                "")); idp++;
+
+
+        //PROCESADOR
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("i3"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "dell"))),
+                "")); idp++;
+
     }
     //
 
