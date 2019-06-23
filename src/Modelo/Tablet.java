@@ -186,4 +186,8 @@ public class Tablet {
         return flag;
     }
 
+    public String toString(){
+        return "MODELO: " + codigoModelo + "\nMARCA: " + marca + "\nPRECIO: $" + precio + "\n";
+    }
+
 }

@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="7cbe6f14-d70e-49bb-8d98-363643ebf2ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+=======
     <list default="true" id="e9bb6f8e-a9a1-47ae-ac96-88117b73f168" name="Default Changelist" comment="">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Core/ChatbotCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ChatbotCore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modelo/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Notebook.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Celular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Celular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Tablet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Tablet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Televisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Televisor.java" afterDir="false" />
+>>>>>>> develop
 =======
       <change afterPath="$PROJECT_DIR$/src/res/bernard.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -18,6 +28,10 @@
       <change beforePath="$PROJECT_DIR$/src/UI/Chatbox.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Chatbox.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Chatbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Chatbox.java" afterDir="false" />
 >>>>>>> develop
+<<<<<<< HEAD
+=======
+>>>>>>> develop
+>>>>>>> develop
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +41,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="-1523333816">
       <usages-collector id="statistics.file.extensions.edit">
@@ -51,11 +66,14 @@
       </usages-collector>
     </session>
   </component>
+=======
+>>>>>>> develop
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="548">
               <caret line="85" column="58" lean-forward="true" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
@@ -65,13 +83,31 @@
                 <element signature="e#6765#6766#0" expanded="true" />
                 <element signature="e#6805#6806#0" expanded="true" />
 =======
-            <state relative-caret-position="1093">
-              <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+            <state relative-caret-position="532">
+              <caret line="148" column="18" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="306">
+              <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#1599#1609#0" expanded="true" />
+                <element signature="e#1665#1674#0" expanded="true" />
+                <element signature="e#1728#1736#0" expanded="true" />
+                <element signature="e#1796#1807#0" expanded="true" />
+                <element signature="method#solveConflict#0;class#ChatbotCore#0" />
+                <element signature="e#6763#6764#0" expanded="true" />
+                <element signature="e#6803#6804#0" expanded="true" />
+>>>>>>> develop
+=======
+            <state relative-caret-position="1093">
+              <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+>>>>>>> develop
+              <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
-                <element signature="e#529#591#0" />
                 <element signature="e#5875#5876#0" expanded="true" />
                 <element signature="e#5915#5916#0" expanded="true" />
 >>>>>>> develop
@@ -81,28 +117,56 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/Modelo/Celular.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="192" column="93" selection-start-line="192" selection-start-column="93" selection-end-line="192" selection-end-column="93" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4848#4849#0" expanded="true" />
+                <element signature="e#4895#4896#0" expanded="true" />
+=======
         <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="-10">
               <caret line="138" column="45" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
+=======
+            <state relative-caret-position="186">
+              <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+>>>>>>> develop
 =======
             <state>
               <caret line="122" selection-start-line="122" selection-end-line="122" />
 >>>>>>> develop
               <folding>
                 <element signature="e#950#1432#1" />
+>>>>>>> develop
               </folding>
+>>>>>>> develop
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/Modelo/Tablet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="189" column="93" selection-start-line="189" selection-start-column="93" selection-end-line="189" selection-end-column="93" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4723#4724#0" expanded="true" />
+                <element signature="e#4817#4818#0" expanded="true" />
+              </folding>
+=======
         <entry file="file://$PROJECT_DIR$/src/NLP/Lema.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -121,6 +185,18 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Modelo/Televisor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="146" column="93" selection-start-line="146" selection-start-column="93" selection-end-line="146" selection-end-column="93" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3559#3560#0" expanded="true" />
+                <element signature="e#3653#3654#0" expanded="true" />
+              </folding>
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -143,12 +219,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="20" column="104" selection-start-line="20" selection-start-column="104" selection-end-line="20" selection-end-column="104" />
+>>>>>>> develop
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
+=======
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -157,9 +236,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/UI/Chatbox.java" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/Core/DB.java" />
         <option value="$PROJECT_DIR$/src/Core/ChatbotCore.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Notebook.java" />
+=======
+        <option value="$PROJECT_DIR$/src/Modelo/Notebook.java" />
+        <option value="$PROJECT_DIR$/src/Core/DB.java" />
+        <option value="$PROJECT_DIR$/src/Core/ChatbotCore.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Celular.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Tablet.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Televisor.java" />
+>>>>>>> develop
 =======
         <option value="$PROJECT_DIR$/src/UI/Chatbox.form" />
         <option value="$PROJECT_DIR$/src/Main.java" />
@@ -173,6 +261,7 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+>>>>>>> develop
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -181,8 +270,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
       <pane id="Scope" />
-      <pane id="AndroidView" />
+>>>>>>> develop
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -194,19 +285,30 @@
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+>>>>>>> develop
             </path>
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Core" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+>>>>>>> develop
             </path>
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
@@ -219,12 +321,23 @@
               <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="NLP" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+>>>>>>> develop
+>>>>>>> develop
             </path>
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chatbot_IA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Produccion" type="462c0819:PsiDirectoryNode" />
+=======
+<<<<<<< HEAD
+=======
+              <item name="Produccion" type="462c0819:PsiDirectoryNode" />
+>>>>>>> develop
+>>>>>>> develop
             </path>
             <path>
               <item name="Chatbot_IA" type="b2602c69:ProjectViewProjectNode" />
@@ -239,10 +352,19 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+>>>>>>> develop
+      <pane id="AndroidView" />
+>>>>>>> develop
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< HEAD
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
 <<<<<<< HEAD
@@ -256,6 +378,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Git\Chatbot_IA\Chatbot_IA\src\res" />
     </key>
+>>>>>>> develop
+=======
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
 >>>>>>> develop
   </component>
   <component name="RunDashboard">
@@ -291,17 +418,33 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2399000" />
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="7000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="5739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+=======
+    <option name="totallyTimeSpent" value="2399000" />
+>>>>>>> develop
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+>>>>>>> develop
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1500673" />
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16308725" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16577181" />
+>>>>>>> develop
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -310,7 +453,11 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3286119" />
+=======
       <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.2549575" />
+>>>>>>> develop
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -328,6 +475,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
   </component>
+<<<<<<< HEAD
+=======
   <component name="editorHistoryManager">
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Produccion/Regla.java">
@@ -368,6 +517,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Modelo/Celular.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
@@ -419,6 +569,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> develop
     <entry file="file://$PROJECT_DIR$/src/Produccion/MTEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -426,6 +578,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Modelo/Notebook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -436,10 +589,13 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> develop
     <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1288">
           <caret line="407" column="121" selection-start-line="407" selection-start-column="107" selection-end-line="407" selection-end-column="121" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#276#277#0" expanded="true" />
@@ -454,8 +610,11 @@
             <element signature="method#cargarReglasCelulares#0;class#MP#0" />
             <element signature="method#cargarReglasTablets#0;class#MP#0" />
 =======
+>>>>>>> develop
+=======
         <state>
           <caret line="122" selection-start-line="122" selection-end-line="122" />
+>>>>>>> develop
           <folding>
             <element signature="e#950#1432#1" />
 >>>>>>> develop
@@ -484,7 +643,11 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="-10">
+<<<<<<< HEAD
           <caret line="138" column="45" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
+=======
+          <caret line="139" column="45" selection-start-line="139" selection-start-column="45" selection-end-line="139" selection-end-column="45" />
+>>>>>>> develop
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#8590#8591#0" expanded="true" />
@@ -508,6 +671,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
@@ -517,6 +681,69 @@
             <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
             <element signature="e#6765#6766#0" expanded="true" />
             <element signature="e#6805#6806#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Notebook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="185" column="16" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#1599#1609#0" expanded="true" />
+            <element signature="e#1665#1674#0" expanded="true" />
+            <element signature="e#1728#1736#0" expanded="true" />
+            <element signature="e#1796#1807#0" expanded="true" />
+            <element signature="method#solveConflict#0;class#ChatbotCore#0" />
+            <element signature="e#6763#6764#0" expanded="true" />
+            <element signature="e#6803#6804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Celular.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="192" column="93" selection-start-line="192" selection-start-column="93" selection-end-line="192" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4895#4896#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Tablet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="189" column="93" selection-start-line="189" selection-start-column="93" selection-end-line="189" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4723#4724#0" expanded="true" />
+            <element signature="e#4817#4818#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Televisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="146" column="93" selection-start-line="146" selection-start-column="93" selection-end-line="146" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3559#3560#0" expanded="true" />
+            <element signature="e#3653#3654#0" expanded="true" />
+>>>>>>> develop
 =======
         <state relative-caret-position="1093">
           <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
@@ -534,6 +761,10 @@
     </entry>
 <<<<<<< HEAD
   </component>
+<<<<<<< HEAD
+=======
+>>>>>>> develop
+>>>>>>> develop
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
@@ -604,7 +835,14 @@
         </settings>
       </state>
     </states>
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> develop
+>>>>>>> develop
 >>>>>>> develop
   </component>
 </project>
