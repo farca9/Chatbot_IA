@@ -189,9 +189,10 @@ public class Notebook {
         return flag;
     }
 
+    public String toString(){
 
+        return "MODELO: "+this.codigoModelo+"\nMARCA: "+this.marca+"\nPRECIO: $"+this.precio+"\n";
 
-
-
+    }
 
 }

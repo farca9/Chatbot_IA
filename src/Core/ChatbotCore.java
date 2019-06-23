@@ -52,38 +52,41 @@ public class ChatbotCore {
         //Cuando el cliente presiona el boton de recomendar resultados
         //Se asume que cuanto mucho se ofrecen 3 productos
         List<MTEntry> mt = MT.getInstance().getElementosMT();
-        List<Notebook> notebookResults = new ArrayList<Notebook>();
+        /*List<Notebook> notebookResults = new ArrayList<Notebook>();
         List<Celular> celularResults = new ArrayList<Celular>();
         List<Tablet> tabletResults = new ArrayList<Tablet>();
-        List<Televisor> televisorResults = new ArrayList<Televisor>();
+        List<Televisor> televisorResults = new ArrayList<Televisor>();*/
         DB dbInstance = DB.getInstance();
+        String results = "RESULTADOS:\n==========\n";
 
         if(mt.contains(new MTEntry("tipoProducto","notebook"))) {
 
             for(Notebook n : dbInstance.getNotebookList()){
-                if(n.filtrar(mt)) notebookResults.add(n);
+                if(n.filtrar(mt)) results += n.toString();
             }
 
         }
         else if(mt.contains(new MTEntry("tipoProducto","celular"))) {
 
             for(Celular n : dbInstance.getCelularList()){
-                if(n.filtrar(mt)) celularResults.add(n);
+                if(n.filtrar(mt)) results += n.toString();
             }
 
         }
         else if (mt.contains(new MTEntry("tipoProducto","tablet"))) {
 
             for(Tablet n : dbInstance.getTabletList()){
-                if(n.filtrar(mt)) tabletResults.add(n);
+                if(n.filtrar(mt)) results += n.toString();
             }
 
         }
         else if (mt.contains(new MTEntry("tipoProducto","televisor"))) {
 
             for(Televisor n : dbInstance.getTelevisorList()){
-                if(n.filtrar(mt)) televisorResults.add(n);
+                if(n.filtrar(mt)) results += n.toString();
             }
+
+
 
         }
         else {
