@@ -18,10 +18,10 @@ public class NLPTool {
 
         lemas = new ArrayList<>();
 
-        lemas.add(new Lema("notebook", new ArrayList<>(Arrays.asList("computadora","ordenador","laptop","portatil", "compu"))));
-        lemas.add(new Lema("celular", new ArrayList<>(Arrays.asList("smartphone","telefono","movil"))));
-        lemas.add(new Lema("tablet", new ArrayList<>(Arrays.asList("tableta"))));
-        lemas.add(new Lema("televisor", new ArrayList<>(Arrays.asList("tv","television"))));
+        lemas.add(new Lema("notebook", new ArrayList<>(Arrays.asList(" computadora"," ordenador"," laptop"," portatil", " compu"))));
+        lemas.add(new Lema("celular", new ArrayList<>(Arrays.asList(" smartphone"," telefono"," movil", " celu "))));
+        lemas.add(new Lema("tablet", new ArrayList<>(Arrays.asList(" tableta"))));
+        lemas.add(new Lema("televisor", new ArrayList<>(Arrays.asList("tv","television","televisor","tele"))));
 
         lemas.add(new Lema("marca", new ArrayList<>(Arrays.asList("samsung","motorola","lg","alcatel","apple","google","huawei","acer","asus","exo","hp","lenovo","apple","bangho","dell","next technologies","next","philco","ion","tcl","kanju","viewsonic","xview","bgh","hisense","ken brown","noblex","philips","tcl"))));
         lemas.add(new Lema("acer", new ArrayList<>(Arrays.asList(" acer "))));
@@ -53,21 +53,22 @@ public class NLPTool {
         lemas.add(new Lema("xview", new ArrayList<>(Arrays.asList(" xview "))));
 
         lemas.add(new Lema("procesador", new ArrayList<>(Arrays.asList("cpu","intel","amd"))));
-        lemas.add(new Lema("i3", new ArrayList<>(Arrays.asList("intel i3"))));
-        lemas.add(new Lema("i5", new ArrayList<>(Arrays.asList("intel i5"))));
-        lemas.add(new Lema("i7", new ArrayList<>(Arrays.asList("intel i7"))));
+        lemas.add(new Lema("i3", new ArrayList<>(Arrays.asList("intel i3","intel core i3"))));
+        lemas.add(new Lema("i5", new ArrayList<>(Arrays.asList("intel i5","intel core i5"))));
+        lemas.add(new Lema("i7", new ArrayList<>(Arrays.asList("intel i7","intel core i7"))));
         lemas.add(new Lema("atom", new ArrayList<>(Arrays.asList("intel atom"))));
         lemas.add(new Lema("celeron", new ArrayList<>(Arrays.asList("intel celeron"))));
         lemas.add(new Lema("a6", new ArrayList<>(Arrays.asList("amd a6"))));
 
-        lemas.add(new Lema("pantalla", new ArrayList<>(Arrays.asList("screen"))));
-        lemas.add(new Lema("almacenamiento", new ArrayList<>(Arrays.asList("storage","disco","memoria fisica", "ssd"))));
-        lemas.add(new Lema("ram", new ArrayList<>(Arrays.asList("ram"))));
+        lemas.add(new Lema("pantalla", new ArrayList<>(Arrays.asList("screen","display"))));
+        lemas.add(new Lema("almacenamiento", new ArrayList<>(Arrays.asList("storage"," disco","memoria fisica", "ssd","hdd"))));
+        lemas.add(new Lema("ram", new ArrayList<>(Arrays.asList(" ram "))));
         lemas.add(new Lema("precio", new ArrayList<>(Arrays.asList("gastar","presupuesto","monto","estiro","gasto","$"))));
         lemas.add(new Lema("camara", new ArrayList<>(Arrays.asList("resolucion camara"))));
+
         lemas.add(new Lema("grande", new ArrayList<>(Arrays.asList("gran","amplia","larga","extensa","mucho","alto","abundante","bastante","alta","ilimitado", "mucha", "gigante"))));
-        lemas.add(new Lema("normal", new ArrayList<>(Arrays.asList("media","normal","estandar","promedio","regular","medio"))));
-        lemas.add(new Lema("pequenio", new ArrayList<>(Arrays.asList("pequeña","pequeño","reducida","limitado","escaso","corta","economica","barata","economico","barato", "poca", "limitada","escasa", "poco", "no grande", "pequenia", "pequenio"))));
+        lemas.add(new Lema("normal", new ArrayList<>(Arrays.asList("media","normal","estandar","promedio","regular","medio","suficiente"))));
+        lemas.add(new Lema("pequenio", new ArrayList<>(Arrays.asList("pequeña","pequeño","reducida","limitado","escaso","corta","economica","barata","economico","barato", "poca", "limitada","escasa", "poco", "no grande", "pequenia", "pequenio","chica","chico"))));
 
         lemas.add(new Lema("gpu", new ArrayList<>(Arrays.asList("placa de video","graficas"))));
         lemas.add(new Lema("integrada", new ArrayList<>(Arrays.asList("intel graphics","amd"))));
