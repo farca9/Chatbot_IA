@@ -1934,6 +1934,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "bgh"))),
                 "Perfecto. Buscare marcas BGH")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("bgh"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "bgh"))),
+                "Buenisimo! Buscare televisores BGH")); idp++;
+
         //HISENSE
         reglas.add(new Regla(
                 idp,
@@ -1942,6 +1950,15 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "hisense"))),
                 "Perfecto. Buscare marcas Hisense")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("hisense"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "hisense"))),
+                "Buenisimo! Buscare televisores Hisense")); idp++;
+
 
         //KEN BROWN
         reglas.add(new Regla(
@@ -1952,6 +1969,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "kenbrown"))),
                 "Perfecto. Buscare marcas Ken Brown")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("kenbrown"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "kenbrown"))),
+                "Buenisimo! Buscare televisores Ken Brown")); idp++;
+
         //LG
         reglas.add(new Regla(
                 idp,
@@ -1960,6 +1985,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "lg"))),
                 "Perfecto. Buscare marcas LG")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("lg"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "lg"))),
+                "Buenisimo! Buscare televisores LG")); idp++;
 
         //NOBLEX
         reglas.add(new Regla(
@@ -1970,6 +2003,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "noblex"))),
                 "Perfecto. Buscare marcas Noblex")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("noblex"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "noblex"))),
+                "Buenisimo! Buscare televisores Noblex")); idp++;
+
         //PHILCO
         reglas.add(new Regla(
                 idp,
@@ -1978,6 +2019,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "philco"))),
                 "Perfecto. Buscare marcas Philco")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("philco"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "philco"))),
+                "Buenisimo! Buscare televisores Philco")); idp++;
 
         //SAMSUNG
         reglas.add(new Regla(
@@ -1988,6 +2037,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "samsung"))),
                 "Perfecto. Buscare marcas Samsung")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("samsung"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "samsung"))),
+                "Buenisimo! Buscare televisores Samsung")); idp++;
+
         //TCL
         reglas.add(new Regla(
                 idp,
@@ -1996,6 +2053,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "tcl"))),
                 "Perfecto. Buscare marcas TCL")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("tcl"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "tcl"))),
+                "Buenisimo! Buscare televisores TCL")); idp++;
 
 
         //////PANTALLA//////
@@ -2009,6 +2074,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "grande"))),
                 "Perfecto. Buscare pantalla grande")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "grande"))),
+                "Buenisimo! Buscare televisores con pantalla grande")); idp++;
+
         //NORMAL
         reglas.add(new Regla(
                 idp,
@@ -2017,6 +2090,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "normal"))),
                 "Perfecto. Buscare pantalla normal")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "normal"))),
+                "Buenisimo! Buscare televisores con pantalla normal")); idp++;
 
 
         //PEQUENIO
@@ -2027,6 +2108,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "pequenio"))),
                 "Perfecto. Buscare pantalla pequeño")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "pequenio"))),
+                "Buenisimo! Buscare televisores con pantalla pequeño")); idp++;
 
         //////TECNOLOGIA//////
 
@@ -2039,6 +2128,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("tecnologia", "smart"))),
                 "Perfecto. Buscare televisores SMART")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("smart"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tecnologia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("tecnologia", "smart"))),
+                "Buenisimo! Buscare televisores que sean SMART")); idp++;
+
         //LED
         reglas.add(new Regla(
                 idp,
@@ -2047,6 +2144,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("tecnologia", "led"))),
                 "Perfecto. Buscare televisores LED")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("led"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tencologia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("tecnologia", "led"))),
+                "Buenisimo! Buscare televisores que sean LED")); idp++;
 
         //////RESOLUCION//////
 
@@ -2059,6 +2164,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"), new MTEntry("resolucion", "hd"))),
                 "Perfecto. Buscare televisores HD")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("hd"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "resolucion"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"), new MTEntry("resolucion", "hd"))),
+                "Buenisimo! Buscare televisores que sean HD")); idp++;
+
         //FHD
         reglas.add(new Regla(
                 idp,
@@ -2068,6 +2181,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"), new MTEntry("resolucion", "fhd"))),
                 "Perfecto. Buscare televisores FHD")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("fhd"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "resolucion"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"), new MTEntry("resolucion", "fhd"))),
+                "Buenisimo! Buscare televisores que sean FHD")); idp++;
+
         //UHD
         reglas.add(new Regla(
                 idp,
@@ -2076,6 +2197,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"), new MTEntry("resolucion", "uhd"))),
                 "Perfecto. Buscare televisores UHD")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("uhd"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "resolucion"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "resolucion"), new MTEntry("resolucion", "uhd"))),
+                "Buenisimo! Buscare televisores que sean UHD")); idp++;
 
 
 
@@ -2090,6 +2219,16 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "grande"))),
                 "Perfecto. Buscare con precios altos")); idp++;
 
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "grande"))),
+                "Buenisimo! Buscare televisores con precios altos")); idp++;
+
+
         //NORMAL
         reglas.add(new Regla(
                 idp,
@@ -2099,6 +2238,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "normal"))),
                 "Perfecto. Buscare con precios medianos")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "normal"))),
+                "Buenisimo! Buscare televisores con precios medianos")); idp++;
+
         //PEQUENIO
         reglas.add(new Regla(
                 idp,
@@ -2107,6 +2254,14 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "pequenio"))),
                 "Perfecto. Buscare con precios bajos")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "pequenio"))),
+                "Buenisimo! Buscare televisores con precios bajos")); idp++;
     }
     //
 
