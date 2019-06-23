@@ -1,5 +1,9 @@
 package Modelo;
 
+import Produccion.MTEntry;
+
+import java.util.List;
+
 public class Tablet {
 
     private String codigoModelo;
@@ -134,6 +138,52 @@ public class Tablet {
 
         return resultado;
 
+    }
+
+    public boolean filtrar(List<MTEntry> parametros) {
+        boolean flag = true;
+        int i = 0;
+
+        while (flag && i < parametros.size()) {
+            if (parametros.get(i).nombre.equals("marca")) {
+                if (!parametros.get(i).value.toString().equals(marca)) {
+                    flag = false;
+                }
+            }
+
+            if (parametros.get(i).nombre.equals("dimPantalla")) {
+                if (!parametros.get(i).value.toString().equals(getTamanioPantalla())) {
+                    flag = false;
+                }
+            }
+
+            if (parametros.get(i).nombre.equals("ram")) {
+                if (!parametros.get(i).value.toString().equals(getTamanioRam())) {
+                    flag = false;
+                }
+            }
+
+            if (parametros.get(i).nombre.equals("almacenamiento")) {
+                if (!parametros.get(i).value.toString().equals(getTamanioAlmacenamiento())) {
+                    flag = false;
+                }
+            }
+
+            if (parametros.get(i).nombre.equals("camara")) {
+                if (!parametros.get(i).value.toString().equals(getResolucionMP())) {
+                    flag = false;
+                }
+            }
+
+            if (parametros.get(i).nombre.equals("precio")) {
+                if (!parametros.get(i).value.toString().equals(getClasePrecio())) {
+                    flag = false;
+                }
+            }
+
+        }
+
+        return flag;
     }
 
 }

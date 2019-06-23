@@ -1,5 +1,9 @@
 package Modelo;
 
+import Produccion.MTEntry;
+
+import java.util.List;
+
 public class Notebook {
 
     private String codigoModelo;
@@ -163,6 +167,28 @@ public class Notebook {
         return resultado;
 
     }
+
+    public boolean filtrar(List<MTEntry> parametros) {
+
+        boolean flag = true;
+        int i = 0;
+
+        while (flag && i < parametros.size()) {
+
+            if (parametros.get(i).nombre.equals("marca") && !parametros.get(i).value.toString().equals(this.marca)) flag = false;
+            if (parametros.get(i).nombre.equals("cpu") && !parametros.get(i).value.toString().equals(this.procesador)) flag = false;
+            if (parametros.get(i).nombre.equals("dimPantalla") && !parametros.get(i).value.toString().equals(this.getTamanioPantalla())) flag = false;
+            if (parametros.get(i).nombre.equals("almacenamiento") && !parametros.get(i).value.toString().equals(this.getTamanioAlmacenamiento())) flag = false;
+            if (parametros.get(i).nombre.equals("ram") && !parametros.get(i).value.toString().equals(this.getTamanioRam())) flag = false;
+            if (parametros.get(i).nombre.equals("gpu") && !parametros.get(i).value.toString().equals(this.getTipoGPU())) flag = false;
+            if (parametros.get(i).nombre.equals("precio") && !parametros.get(i).value.toString().equals(this.getClasePrecio())) flag = false;
+
+            i++;
+        }
+
+        return flag;
+    }
+
 
 
 
