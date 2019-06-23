@@ -1,5 +1,7 @@
 package Core;
 
+import Exceptions.NoLemasException;
+import Exceptions.NoRulesException;
 import NLP.Lema;
 import NLP.NLPTool;
 import Produccion.MP;
@@ -21,6 +23,24 @@ public class ChatbotCore {
         return instance;
     }
     private ChatbotCore(){}
+
+    public static String generarNoComprendo() {
+
+        ArrayList<String> s = new ArrayList<>();
+
+        s.add("Perdon, no te entiendo");
+        s.add("Podrias intentar de nuevo?");
+        s.add("No pude comprender tu respuesta");
+        s.add("Podrias tratar de responderme de otra forma?");
+        s.add("Lo siento, no pude interpretar tu respuesta");
+        s.add("Necesito que me respondas de otra forma");
+        s.add("Me es dificil entender lo que quisiste decir");
+        s.add("Vuelva a epxlicarse por favor");
+        s.add("Podria hablar mas claramente?");
+
+        return s.get(new Random(System.currentTimeMillis()).nextInt(s.size()));
+
+    }
     //
 
     public String hacerRecomendacion(){
@@ -46,12 +66,16 @@ public class ChatbotCore {
         return "asd";
     }
 
-    public String sendAndReceive(String input){
+    public String sendAndReceive(String input) throws NoRulesException, NoLemasException {
 
         String output="";
         //NLP -> Lemas
         NLPTool nlp = NLPTool.getInstance();
         List<Lema> lemasDetectados=nlp.detectarLemas(input);
+        if(lemasDetectados.isEmpty()){
+            throw new NoLemasException();
+        }
+
 
         //Cotejo
         List<Regla> reglasActivas=new ArrayList<>();
@@ -59,6 +83,10 @@ public class ChatbotCore {
             if(regla.cotejar((ArrayList)lemasDetectados)){
                 reglasActivas.add(regla);
             }
+        }
+
+        if(reglasActivas.isEmpty()){
+            throw new NoRulesException();
         }
 
         System.out.println("Reglas activas:");
@@ -69,6 +97,38 @@ public class ChatbotCore {
         //Resolucion de conflictos
         Regla reglaSeleccionada = this.solveConflict(reglasActivas);
         System.out.println("Regla seleccionada: "+reglaSeleccionada.toString());
+
+        //Ejecucion
+        output=reglaSeleccionada.execute();
+
+        return output;
+
+    }
+
+    public String innerSendAndReceive () throws NoRulesException {
+
+        String output="";
+
+        //Cotejo
+        List<Regla> reglasActivas=new ArrayList<>();
+        for(Regla regla : MP.getInstance().getReglas()){
+            if(regla.cotejar(new ArrayList<>())){
+                reglasActivas.add(regla);
+            }
+        }
+
+        if(reglasActivas.isEmpty()){
+            throw new NoRulesException();
+        }
+
+        System.out.println("Inner Reglas activas:");
+        for(Regla r: reglasActivas) {
+            System.out.println(r.toString());
+        }
+
+        //Resolucion de conflictos
+        Regla reglaSeleccionada = this.solveConflict(reglasActivas);
+        System.out.println("Inner Regla seleccionada: "+reglaSeleccionada.toString());
 
         //Ejecucion
         output=reglaSeleccionada.execute();
