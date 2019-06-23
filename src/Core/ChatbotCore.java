@@ -67,21 +67,21 @@ public class ChatbotCore {
         }
         else if(mt.contains(new MTEntry("tipoProducto","celular"))) {
 
-            for(Celular n : dbInstance.getNotebookList()){
+            for(Celular n : dbInstance.getCelularList()){
                 if(n.filtrar(mt)) celularResults.add(n);
             }
 
         }
         else if (mt.contains(new MTEntry("tipoProducto","tablet"))) {
 
-            for(Tablet n : dbInstance.getNotebookList()){
+            for(Tablet n : dbInstance.getTabletList()){
                 if(n.filtrar(mt)) tabletResults.add(n);
             }
 
         }
         else if (mt.contains(new MTEntry("tipoProducto","televisor"))) {
 
-            for(Televisor n : dbInstance.getNotebookList()){
+            for(Televisor n : dbInstance.getTelevisorList()){
                 if(n.filtrar(mt)) televisorResults.add(n);
             }
 
