@@ -71,6 +71,11 @@ public class Regla {
         return mtEntriesPresente;
     }
 
+
+    public String toShortString(){
+        return "R#"+id;
+    }
+
     @Override
     public String toString() {
         String retorno="";

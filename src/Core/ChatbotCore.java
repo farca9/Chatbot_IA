@@ -120,10 +120,12 @@ public class ChatbotCore {
             throw new NoRulesException();
         }
 
-        System.out.println("Reglas activas:");
+        System.out.println("");
+        System.out.print("Reglas activas: ");
         for(Regla r: reglasActivas) {
-            System.out.println(r.toString());
+            System.out.print(r.toShortString()+",");
         }
+        System.out.println("");
 
         //Resolucion de conflictos
         Regla reglaSeleccionada = this.solveConflict(reglasActivas);
@@ -152,10 +154,12 @@ public class ChatbotCore {
             throw new NoRulesException();
         }
 
-        System.out.println("Inner Reglas activas:");
+        System.out.println("");
+        System.out.print("Inner Reglas activas: ");
         for(Regla r: reglasActivas) {
-            System.out.println(r.toString());
+            System.out.print(r.toShortString()+",");
         }
+        System.out.println("");
 
         //Resolucion de conflictos
         Regla reglaSeleccionada = this.solveConflict(reglasActivas);
