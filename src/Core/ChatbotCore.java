@@ -94,7 +94,7 @@ public class ChatbotCore {
             return "Lo lamento, no he podido encontrar ningun resultado";
         }
 
-        return "asd";
+        return results;
     }
 
     public String sendAndReceive(String input) throws NoRulesException, NoLemasException {

@@ -191,7 +191,7 @@ public class Notebook {
 
     public String toString(){
 
-        return "MODELO: "+this.codigoModelo+"\nMARCA: "+this.marca+"\nPRECIO: $"+this.precio+"\n";
+        return "\nMODELO: "+this.codigoModelo+"\nMARCA: "+this.marca+"\nPRECIO: $"+this.precio+"\n";
 
     }
 

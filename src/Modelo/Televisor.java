@@ -137,13 +137,13 @@ public class Televisor {
                     flag = false;
                 }
             }
-
+            i++;
         }
 
         return flag;
     }
 
     public String toString(){
-        return "MODELO: " + codigoModelo + "\nMARCA: " + marca + "\nPRECIO: $" + precio + "\n";
+        return "\nMODELO: " + codigoModelo + "\nMARCA: " + marca + "\nPRECIO: $" + precio + "\n";
     }
 }
