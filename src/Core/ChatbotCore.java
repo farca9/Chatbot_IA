@@ -56,7 +56,7 @@ public class ChatbotCore {
         List<MTEntry> mt = MT.getInstance().getElementosMT();
         int elementos = 0;
         DB dbInstance = DB.getInstance();
-        String results = "Estos son los modelos que te puedo recomendar:";
+        String results = "Estos son los modelos que te puedo recomendar:\n";
 
         if(mt.contains(new MTEntry("tipoProducto","notebook"))) {
 
@@ -91,7 +91,7 @@ public class ChatbotCore {
             results = "Lo lamento, no he podido encontrar ningun resultado :(";
         }
 
-        if(elementos == 0) results = "Lo lamento, no he podido encontrar ningun resultado :(";
+        if(elementos == 0) results = "Lo lamento, no he podido encontrar ningun resultado que cumpla con los criterios que me dijiste :(";
 
         return results;
     }
