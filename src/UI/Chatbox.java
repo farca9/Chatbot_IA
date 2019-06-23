@@ -1,6 +1,8 @@
 package UI;
 
 import Core.ChatbotCore;
+import Exceptions.NoLemasException;
+import Exceptions.NoRulesException;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -18,6 +20,7 @@ public class Chatbox {
     private JButton clearButton;
     private JButton recomendarButton;
     private SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+    private boolean firstInteraction=true;
 
     private void createUIComponents() {
     }
@@ -29,19 +32,49 @@ public class Chatbox {
         sendButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String input, output;
-                input = inputTextArea.getText();
+                if(firstInteraction){
+
+                    String output;
+                    try {
+                        output=ChatbotCore.getInstance().innerSendAndReceive();
+                        chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output + "\n");
+                    } catch (NoRulesException ex) {
+                        ex.printStackTrace();
+                    }
+
+                    inputTextArea.setText("");
+
+                    firstInteraction=false;
+                } else {
+
+                    String input, output1, output2;
+                    input = inputTextArea.getText();
 
 
-                chatTextArea.append("\n<< You ("+sdf.format(new Date())+"): "+input+"\n");
+                    chatTextArea.append("\n<< You (" + sdf.format(new Date()) + "): " + input + "\n");
 
-                input=input.toLowerCase();
-                output = ChatbotCore.getInstance().sendAndReceive(input);
+                    input = input.toLowerCase();
+                    try {
+                        output1 = ChatbotCore.getInstance().sendAndReceive(input);
+                    } catch (NoRulesException ex) {
+                        output1 = ChatbotCore.generarNoComprendo();
+                    } catch (NoLemasException ex) {
+                        output1 = ChatbotCore.generarNoComprendo();
+                    }
 
-                chatTextArea.append("\n>> Bot ("+sdf.format(new Date())+"): "+output+"\n");
+                    chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output1 + "");
 
-                inputTextArea.setText("");
+                    try{
+                        output2 = ChatbotCore.getInstance().innerSendAndReceive();
+                    } catch (NoRulesException ex) {
+                        ex.printStackTrace();
+                        output2 = "no inner rule found /notonfirst";
+                    }
 
+                    chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output2 + "\n");
+
+                    inputTextArea.setText("");
+                }
 
             }
         });
@@ -57,6 +90,9 @@ public class Chatbox {
 
                 sendButton.setEnabled(true);
                 recomendarButton.setEnabled(true);
+                firstInteraction=true;
+
+                sendButton.doClick();
 
             }
         });
@@ -81,6 +117,9 @@ public class Chatbox {
                 recomendarButton.setEnabled(false);
             }
         });
+
+        sendButton.doClick();
+
     }
 
 }

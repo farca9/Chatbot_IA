@@ -38,8 +38,56 @@ public class MP {
     }
 
     public void cargarReglas(){
+        cargarReglasGenerales();
         cargarReglasComputadoras();
         cargarReglasCelulares();
+
+    }
+
+    private void cargarReglasGenerales() {
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"), new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                "Que producto esta buscando?")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "notebook"))),
+                "Perfecto, buscaremos computadoras portatiles")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "celular"))),
+                "Perfecto, buscaremos celulares")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("tablet"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "tablet"))),
+                "Perfecto, buscaremos tablets")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("televisor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "televisor"))),
+                "Perfecto, buscaremos televisores")); idp++;
+
+
+
 
     }
 
