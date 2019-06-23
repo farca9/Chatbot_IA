@@ -48,19 +48,22 @@ public class ChatbotCore {
         //Cuando el cliente presiona el boton de recomendar resultados
         //Se asume que cuanto mucho se ofrecen 3 productos
         List<MTEntry> mt = MT.getInstance().getElementosMT();
+        DB dbInstance = DB.getInstance();
 
         if(mt.contains(new MTEntry("tipoProducto","notebook"))){
 
-        } else if(mt.contains(new MTEntry("tipoProducto","celular"))) {
+        }
+        else if(mt.contains(new MTEntry("tipoProducto","celular"))) {
 
-        } else if (mt.contains(new MTEntry("tipoProducto","tablet"))) {
+        }
+        else if (mt.contains(new MTEntry("tipoProducto","tablet"))) {
 
-        } else if (mt.contains(new MTEntry("tipoProducto","televisor"))) {
+        }
+        else if (mt.contains(new MTEntry("tipoProducto","televisor"))) {
 
-        } else {
-
+        }
+        else {
             return "Lo lamento, no he podido encontrar ningun resultado";
-
         }
 
         return "asd";
@@ -209,5 +212,7 @@ public class ChatbotCore {
     public void clearChat(){
         MT.getInstance().clear();
     }
+
+
 
 }

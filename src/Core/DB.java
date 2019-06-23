@@ -50,7 +50,6 @@ public class DB {
         notebooks.add(new Notebook("Inspiron Gamer 15","Dell", "i5", "Intel", 15.6, "1 TB + 128 GB SSD",8, "NVIDIA GeForce GTX 1050", 59999.0));
         notebooks.add(new Notebook("Inspiron 5480", "Dell", "i5", "Intel",14.1, "256 GB SSD",8,"Intel Graphics 620", 67999.0));
 
-
         return notebooks;
     }
 
