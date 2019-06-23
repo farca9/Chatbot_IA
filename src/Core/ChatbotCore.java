@@ -103,6 +103,7 @@ public class ChatbotCore {
         //NLP -> Lemas
         NLPTool nlp = NLPTool.getInstance();
         List<Lema> lemasDetectados=nlp.detectarLemas(input);
+        System.out.println(lemasDetectados);
         if(lemasDetectados.isEmpty()){
             throw new NoLemasException();
         }
