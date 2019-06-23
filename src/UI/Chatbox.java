@@ -50,7 +50,7 @@ public class Chatbox {
                     String output;
                     try {
                         output=ChatbotCore.getInstance().innerSendAndReceive();
-                        String line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output;
+                        String line = "\n>> Bernard (" + sdf.format(new Date()) + "): " + output;
                         chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
                     } catch (NoRulesException ex) {
                         ex.printStackTrace();
@@ -77,11 +77,11 @@ public class Chatbox {
                     input = input.toLowerCase();
                     try {
                         output1 = ChatbotCore.getInstance().sendAndReceive(input);
-                        line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output1;
+                        line = "\n>> Bernard (" + sdf.format(new Date()) + "): " + output1;
                         chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
                     } catch (NoRulesException ex) {
                         output1 = ChatbotCore.generarNoComprendo();
-                        line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output1;
+                        line = "\n>> Bernard (" + sdf.format(new Date()) + "): " + output1;
                         try {
                             chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
                         } catch (BadLocationException exc) {
@@ -91,7 +91,7 @@ public class Chatbox {
                         return;
                     } catch (NoLemasException ex) {
                         output1 = ChatbotCore.generarNoComprendo();
-                        line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output1;
+                        line = "\n>> Bernard (" + sdf.format(new Date()) + "): " + output1;
                         try {
                             chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
                         } catch (BadLocationException exc) {
@@ -105,11 +105,11 @@ public class Chatbox {
 
                     try{
                         output2 = ChatbotCore.getInstance().innerSendAndReceive();
-                        line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output2;
+                        line = "\n>> Bernard (" + sdf.format(new Date()) + "): " + output2;
                         chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
                     } catch (NoRulesException ex) {
                         output2 = ChatbotCore.getInstance().hacerRecomendacion();
-                        line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output2;
+                        line = "\n>> Bernard (" + sdf.format(new Date()) + "): " + output2;
                         try {
                             chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
                         } catch (BadLocationException exc) {
@@ -131,7 +131,7 @@ public class Chatbox {
             public void actionPerformed(ActionEvent e) {
 
                 inputTextArea.setText("");
-                //chatTextArea.setText("Bienvenido al Asistente de Compras!!\n");
+                chatTextPane.setText("");
 
                 ChatbotCore.getInstance().clearChat();
 
@@ -158,7 +158,7 @@ public class Chatbox {
 
                 String output = ChatbotCore.getInstance().hacerRecomendacion();
 
-                String line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output;
+                String line = "\n>> Bernard (" + sdf.format(new Date()) + "): " + output;
                 try {
                     chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
                 } catch (BadLocationException ex) {

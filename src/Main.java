@@ -4,6 +4,7 @@ import Produccion.Regla;
 import UI.Chatbox;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -17,6 +18,8 @@ public class Main {
         frame.pack();
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
+        frame.setIconImage(Toolkit.getDefaultToolkit().getImage(frame.getClass().getResource("/res/logo2.png")));
+        frame.setTitle("Bernard Lowe - Asistente de ventas");
 
     }
 }
