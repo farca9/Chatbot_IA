@@ -33,8 +33,18 @@ public class MTEntry {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MTEntry mtEntry = (MTEntry) o;
+        if(((MTEntry) o).getValue()==null || this.value==null){
+            return Objects.equals(nombre,mtEntry.nombre);
+        }
         return Objects.equals(nombre, mtEntry.nombre) &&
                 Objects.equals(value, mtEntry.value);
+    }
+
+    @Override
+    public String toString() {
+        if(value != null) {
+            return nombre + "(" + value.toString() + ")";
+        } else return nombre +"()";
     }
 
     @Override
