@@ -21,6 +21,7 @@ import java.util.Random;
 
 public class ChatbotCore {
 
+    public static boolean modoCliente=true;
     private Regla reglaPrevia=null;
 
     //Singleton

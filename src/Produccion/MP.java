@@ -1,5 +1,6 @@
 package Produccion;
 
+import Core.ChatbotCore;
 import NLP.Lema;
 
 import java.util.ArrayList;
@@ -20,9 +21,18 @@ public class MP {
     private MP(){
         reglas=new ArrayList<>();
 
-        cargarReglas();
+        if(ChatbotCore.modoCliente) {
+            cargarReglas();
 
+        } else {
 
+            cargarReglasVendedor();
+
+        }
+
+    }
+
+    private void cargarReglasVendedor() {
     }
 
     public void add(Regla regla){
@@ -39,7 +49,6 @@ public class MP {
 
     public void cargarReglas(){
         cargarReglasGenerales();
-
         cargarReglasComputadoras();
         cargarReglasCelulares();
         cargarReglasTablets();
