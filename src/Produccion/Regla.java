@@ -71,6 +71,7 @@ public class Regla {
         return mtEntriesPresente;
     }
 
+
     public String toShortString(){
         return "R#"+id;
     }

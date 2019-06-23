@@ -180,7 +180,7 @@ public class Tablet {
                     flag = false;
                 }
             }
-
+            i++;
         }
 
         return flag;

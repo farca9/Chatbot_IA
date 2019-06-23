@@ -191,7 +191,7 @@ public class Notebook {
 
     public String toString(){
 
-        return "MODELO: "+this.codigoModelo+"\nMARCA: "+this.marca+"\nPRECIO: $"+this.precio+"\n";
+        return this.marca+" "+this.codigoModelo+": Posee un procesador "+this.marcaProcesador+" "+this.procesador+" y "+this.cantidadRam+" GB de RAM, "+this.cantidadStorage+" de almacenamiento, una pantalla de "+this.dimPantalla+"'' y una placa de video "+this.getTipoGPU()+" "+this.gpu+". Su precio es de $"+this.precio+".";
 
     }
 

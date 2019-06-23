@@ -182,7 +182,7 @@ public class Celular {
                     flag = false;
                 }
             }
-
+            i++;
         }
 
         return flag;
