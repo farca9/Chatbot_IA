@@ -180,7 +180,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "cpu"), new MTEntry("ans", "cpu"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "cpu"), new MTEntry("ask", "cpu"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "cpu"))),
                 "Que procesador quiere?")); idp++;
 
@@ -189,7 +189,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("ans", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("ask", "dimPantalla"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "dimPantalla"))),
                 "Quiere una pantalla grande o chica?")); idp++;
 
@@ -198,7 +198,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"), new MTEntry("ans", "almacenamiento"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"), new MTEntry("ask", "almacenamiento"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "almacenamiento"))),
                 "Cuanto almacenamiento quiere? Mucho o poca?")); idp++;
 
@@ -207,7 +207,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"), new MTEntry("ans", "ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"), new MTEntry("ask", "ram"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "ram"))),
                 "Cuanta RAM quiere? Mucha o poca?")); idp++;
 
@@ -216,7 +216,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "gpu"), new MTEntry("ans", "gpu"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "gpu"), new MTEntry("ask", "gpu"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "gpu"))),
                 "Quiere GPU integrada o dedicada?")); idp++;
 
@@ -226,7 +226,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("ans", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("ask", "precio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "precio"))),
                 "Cuanto esta dispuesto a gastar?")); idp++;
 
@@ -576,7 +576,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("ask", "marca"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "marca"))),
                 "Que marca quiere?")); idp++;
 
@@ -585,7 +585,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("ans", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("ask", "dimPantalla"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "dimPantalla"))),
                 "Quiere una pantalla grande o chica?")); idp++;
 
@@ -593,39 +593,241 @@ public class MP {
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(),
-                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"), new MTEntry("ans", "almacenamiento"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"), new MTEntry("ask", "almacenamiento"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "almacenamiento"))),
-                "Cuanto almacenamiento quiere? Mucho o poca?")); idp++;
+                "Cuanto almacenamiento quiere? Mucho o poco?")); idp++;
 
         //RAM
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(),
-                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"), new MTEntry("ans", "ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"), new MTEntry("ask", "ram"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "ram"))),
                 "Cuanta RAM quiere? Mucha o poca?")); idp++;
 
-        //GPU
+        //RES CAMARA
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(),
-                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "gpu"), new MTEntry("ans", "gpu"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ask", "gpu"))),
-                "Quiere GPU integrada o dedicada?")); idp++;
-
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "camara"), new MTEntry("ask", "camara"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "camara"))),
+                "Quiere la camara con alta o baja resolucion?")); idp++;
 
         //PRECIO
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(),
-                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("ans", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("ask", "precio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "precio"))),
                 "Cuanto esta dispuesto a gastar?")); idp++;
 
+
+
+        //////////////REGLAS RESPUESTA///////////////
+
+        //////MARCA//////
+
+        //SAMSUNG
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("samsung"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "samsung"))),
+                "Perfecto. Buscare marcas Samsung")); idp++;
+
+        //MOTOROLA
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("motorola"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "motorola"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "motorola"))),
+                "Perfecto. Buscare marcas Motorola")); idp++;
+
+        //LG
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("lg"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "lg"))),
+                "Perfecto. Buscare marcas LG")); idp++;
+
+        //ALCATEL
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("alcatel"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "alcatel"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "alcatel"))),
+                "Perfecto. Buscare marcas Alcatel")); idp++;
+
+        //APPLE
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("apple"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "apple"))),
+                "Perfecto. Buscare marcas Apple")); idp++;
+
+         //GOOGLE
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("google"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "google"))),
+                "Perfecto. Buscare marcas Google")); idp++;
+
+
+
+        //////PANTALLA//////
+        //GRANDE
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "grande"))),
+                "Perfecto. Buscare pantalla grande")); idp++;
+
+        //NORMAL
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "normal"))),
+                "Perfecto. Buscare pantalla normal")); idp++;
+
+
+        //PEQUENIO
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "dimPantalla"), new MTEntry("dimPantalla", "pequenio"))),
+                "Perfecto. Buscare pantalla pequeño")); idp++;
+
+
+        //////RAM//////
+
+        //GRANDE
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"), new MTEntry("ram", "grande"))),
+                "Perfecto. Buscare con mucha RAM")); idp++;
+
+        //MEDIANO
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"), new MTEntry("ram", "normal"))),
+                "Perfecto. Buscare con RAM normal")); idp++;
+
+        //PEQUENIO
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "ram"), new MTEntry("ram", "pequenio"))),
+                "Perfecto. Buscare con poca RAM")); idp++;
+
+
+        //////ALMACENAMIENTO//////
+
+        //GRANDE
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "almacenamiento"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"), new MTEntry("almacenamiento", "grande"))),
+                "Perfecto. Buscare con mucho almacenamiento")); idp++;
+
+        //NORMAL
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "almacenamiento"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"), new MTEntry("almacenamiento", "normal"))),
+                "Perfecto. Buscare con almacenamiento normal")); idp++;
+
+        //PEQUENIO
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "almacenamiento"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "almacenamiento"), new MTEntry("almacenamiento", "pequenio"))),
+                "Perfecto. Buscare con poco almacenamiento")); idp++;
+
+
+        //////RES CAMARA//////
+
+        //ALTA
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "camara"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "camara"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "camara"), new MTEntry("camara", "grande"))),
+                "Perfecto. Buscare con alta resolucion")); idp++;
+
+        //BAJA
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "camara"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "camara"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "camara"), new MTEntry("camara", "pequenio"))),
+                "Perfecto. Buscare con baja resolucion")); idp++;
+
+        //////PRECIO//////
+
+        //GRANDE
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "grande"))),
+                "Perfecto. Buscare con precios altos")); idp++;
+
+        //NORMAL
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "normal"))),
+                "Perfecto. Buscare con precios medianos")); idp++;
+
+        //PEQUENIO
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "celular"), new MTEntry("ask", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "pequenio"))),
+                "Perfecto. Buscare con precios bajos")); idp++;
+
+
+                
     }
 
     //

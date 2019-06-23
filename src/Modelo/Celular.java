@@ -77,4 +77,64 @@ public class Celular {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
+
+    public String getTamanioPantalla(){
+
+        String resultado;
+
+        if(dimPantalla <= 5.5) resultado = "pequenio";
+        else if(dimPantalla > 6.1) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getTamanioRam(){
+
+        String resultado;
+
+        if(cantidadRam <= 2) resultado = "pequenio";
+        else if(cantidadRam > 6) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getTamanioAlmacenamiento(){
+
+        String resultado;
+
+        if(cantidadStorage <= 16) resultado = "pequenio";
+        else if(cantidadStorage > 60) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getResolucionMP(){
+
+        String resultado;
+
+        if(resolucionCamara <= 10) resultado = "pequenio";
+        else if(resolucionCamara > 15) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getClasePrecio(){
+
+        String resultado;
+
+        if(precio <= 10000.0) resultado = "pequenio";
+        else if(precio > 40000.0) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
 }

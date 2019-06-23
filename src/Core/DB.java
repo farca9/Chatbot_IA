@@ -30,25 +30,25 @@ public class DB {
 
         notebooks.add(new Notebook("Aspire 3", "Acer", "Celeron", "Intel", 15.6, "1 TB", 4, "Intel Graphics 520", 19999.0));
         notebooks.add(new Notebook("Aspire 5", "Acer", "i7", "Intel", 15.6, "1 TB", 8, "Intel Graphics 520", 49999.0 ));
-        notebooks.add(new Notebook("X540MA", "Asus","Celeron", "Intel", 15.6, "500 GB", 4, "Intel Graphics 520", 19999.0 ));
+        notebooks.add(new Notebook("X540MA", "Asus","Celeron", "Intel", 15.6, "512 GB", 4, "Intel Graphics 520", 19999.0 ));
         notebooks.add(new Notebook("X540UA", "Asus", "i3", "Intel", 15.6, "1 TB", 4, "Intel Graphics 620", 27999.0));
-        notebooks.add(new Notebook("Cloud E15", "Exo", "Atom", "Intel", 14.1,"32 GB",	2, "Intel Graphics 520", 10999.0));
-        notebooks.add(new Notebook("Smart E13X","Exo","Celeron", "Intel" ,13.3,"500 GB",4, "Intel Graphics 520",15999.0));
-        notebooks.add(new Notebook("Envy 13", "HP", "i3", "Intel",13.3, "256 GB",8, "Intel Graphics 620", 46499.0));
+        notebooks.add(new Notebook("Cloud E15", "Exo", "Atom", "Intel", 14.1,"32 GB SSD",	2, "Intel Graphics 520", 10999.0));
+        notebooks.add(new Notebook("Smart E13X","Exo","Celeron", "Intel" ,13.3,"512 GB",4, "Intel Graphics 520",15999.0));
+        notebooks.add(new Notebook("Envy 13", "HP", "i3", "Intel",13.3, "256 GB SSD",8, "Intel Graphics 620", 46499.0));
         notebooks.add(new Notebook("Pavilion 15", "HP", "i5", "Intel",15.6, "1 TB",8, "NVIDIA GeForce GTX 1050",53999.0));
         notebooks.add(new Notebook("EliteBook 840","HP", "i7", "Intel", 14.1, "512 GB", 8,	"Intel Graphics 620",48999.0));
-        notebooks.add(new Notebook("Omen X 2S", "HP", "i7", "Intel", 15.6, "256 GB",16, "NVIDIA GeForce RTX 2070",109999.0));
-        notebooks.add(new Notebook("ThinkPad E590",	"Lenovo", "i3",	"Intel",	15.6,"256 GB",	8,"Intel Graphics 620",42499.0));
-        notebooks.add(new Notebook("Legion Y530", "Lenovo","i7","Intel", 15.6, "1 TB" ,32,	"NVIDIA GeForce GTX 1050", 84999.0));
-        notebooks.add(new Notebook("Yoga Book C930","Lenovo","i5","Intel",15.6,"512 GB",8, "NVIDIA GeForce GTX 1050",	63999.0));
-        notebooks.add(new Notebook("Ideapad S145", "Lenovo", "A6", "AMD",15.6,"512 GB",4, "AMD Integrated", 20999.0));
-        notebooks.add(new Notebook("MacBook Air","Apple", "i5", "Intel",13.3,"128 GB",8, "Intel Graphics 617"	, 88999.0));
+        notebooks.add(new Notebook("Omen X 2S", "HP", "i7", "Intel", 15.6, "256 GB SSD",16, "NVIDIA GeForce RTX 2070",109999.0));
+        notebooks.add(new Notebook("ThinkPad E590",	"Lenovo", "i3",	"Intel",	15.6,"256 GB SSD",	8,"Intel Graphics 620",42499.0));
+        notebooks.add(new Notebook("Legion Y530", "Lenovo","i7","Intel", 15.6, "1 TB + 16 GB SSD" ,32,	"NVIDIA GeForce GTX 1050", 84999.0));
+        notebooks.add(new Notebook("Yoga Book C930","Lenovo","i5","Intel",15.6,"512 GB SSD",8, "NVIDIA GeForce GTX 1050",	63999.0));
+        notebooks.add(new Notebook("Ideapad S145", "Lenovo", "A6", "AMD",15.6,"512 GB SSD",4, "AMD Integrated", 20999.0));
+        notebooks.add(new Notebook("MacBook Air","Apple", "i5", "Intel",13.3,"128 GB SSD",8, "Intel Graphics 617"	, 88999.0));
         notebooks.add(new Notebook("MacBook","Apple", "i5", "Intel",12.0,	"512 GB",8,"Intel Graphics 5300",105899.0));
-        notebooks.add(new Notebook("MacBook Pro", "Apple", "i7", "Intel", 15.4,"512 SSD",16,"ATI Radeon Pro 560X", 203999.0));
+        notebooks.add(new Notebook("MacBook Pro", "Apple", "i7", "Intel", 15.4,"512 GB SSD",16,"ATI Radeon Pro 560X", 203999.0));
         notebooks.add(new Notebook("G5", "Bangho", "i3","Intel", 15.6,"1 TB",4, "Intel Graphics 620",34999.0));
-        notebooks.add(new Notebook("GM-Z 17","Bangho", "i7", "Intel",17.3,"1 TB" ,16, "NVIDIA GeForce GTX 1070", 94999.0));
-        notebooks.add(new Notebook("Inspiron Gamer 15","Dell", "i5", "Intel", 15.6, "1 TB",8, "NVIDIA GeForce GTX 1050", 59999.0));
-        notebooks.add(new Notebook("Inspiron 5480", "Dell", "i5", "Intel",14.1, "256 SSD",8,"Intel Graphics 620", 67999.0));
+        notebooks.add(new Notebook("GM-Z 17","Bangho", "i7", "Intel",17.3,"1 TB + 256 GB SSD" ,16, "NVIDIA GeForce GTX 1070", 94999.0));
+        notebooks.add(new Notebook("Inspiron Gamer 15","Dell", "i5", "Intel", 15.6, "1 TB + 128 GB SSD",8, "NVIDIA GeForce GTX 1050", 59999.0));
+        notebooks.add(new Notebook("Inspiron 5480", "Dell", "i5", "Intel",14.1, "256 GB SSD",8,"Intel Graphics 620", 67999.0));
 
 
         return notebooks;

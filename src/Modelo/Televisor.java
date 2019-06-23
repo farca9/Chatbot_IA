@@ -65,4 +65,28 @@ public class Televisor {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
+
+    public String getTamanioPantalla(){
+
+        String resultado;
+
+        if(dimPantalla <= 32.0) resultado = "pequenio";
+        else if(dimPantalla > 55.0) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getClasePrecio(){
+
+        String resultado;
+
+        if(precio <= 12000.0) resultado = "pequenio";
+        else if(precio > 35000.0) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
 }
