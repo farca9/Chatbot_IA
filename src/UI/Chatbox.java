@@ -37,7 +37,7 @@ public class Chatbox {
                     String output;
                     try {
                         output=ChatbotCore.getInstance().innerSendAndReceive();
-                        chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output + "\n");
+                        chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output);
                     } catch (NoRulesException ex) {
                         ex.printStackTrace();
                     }
@@ -48,30 +48,36 @@ public class Chatbox {
                 } else {
 
                     String input, output1, output2;
-                    input = inputTextArea.getText();
+                    input = inputTextArea.getText().replace("\n","");
 
 
-                    chatTextArea.append("\n<< You (" + sdf.format(new Date()) + "): " + input + "\n");
+                    chatTextArea.append("\n<< You (" + sdf.format(new Date()) + "): " + input);
 
                     input = input.toLowerCase();
                     try {
                         output1 = ChatbotCore.getInstance().sendAndReceive(input);
+                        chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output1);
                     } catch (NoRulesException ex) {
                         output1 = ChatbotCore.generarNoComprendo();
+                        chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output1);
+                        inputTextArea.setText("");
+                        return;
                     } catch (NoLemasException ex) {
                         output1 = ChatbotCore.generarNoComprendo();
+                        chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output1);
+                        inputTextArea.setText("");
+                        return;
                     }
-
-                    chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output1 + "");
 
                     try{
                         output2 = ChatbotCore.getInstance().innerSendAndReceive();
+                        chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output2);
                     } catch (NoRulesException ex) {
                         ex.printStackTrace();
                         output2 = "no inner rule found /notonfirst";
+                        chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output2);
                     }
 
-                    chatTextArea.append("\n>> Bot (" + sdf.format(new Date()) + "): " + output2 + "\n");
 
                     inputTextArea.setText("");
                 }
