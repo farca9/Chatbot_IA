@@ -34,6 +34,7 @@ public class Chatbox {
         StyleConstants.setForeground(styleUser, Color.BLUE);
         StyleConstants.setAlignment(styleUser, StyleConstants.ALIGN_RIGHT);
         StyleConstants.setForeground(styleBot, Color.RED);
+        StyleConstants.setAlignment(styleBot, StyleConstants.ALIGN_LEFT);
 
     }
 
@@ -107,8 +108,7 @@ public class Chatbox {
                         line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output2;
                         chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
                     } catch (NoRulesException ex) {
-                        ex.printStackTrace();
-                        output2 = "no inner rule found /notonfirst";
+                        output2 = ChatbotCore.getInstance().hacerRecomendacion();
                         line = "\n>> Bot (" + sdf.format(new Date()) + "): " + output2;
                         try {
                             chatTextPane.getDocument().insertString(chatTextPane.getDocument().getLength(),line, styleBot);
