@@ -54,43 +54,44 @@ public class ChatbotCore {
         //Cuando el cliente presiona el boton de recomendar resultados
         //Se asume que cuanto mucho se ofrecen 3 productos
         List<MTEntry> mt = MT.getInstance().getElementosMT();
+        int elementos = 0;
         DB dbInstance = DB.getInstance();
-        String results = ">> Bernard (" + new SimpleDateFormat("HH:mm").format(new Date()) + "): Estos son los modelos que te puedo recomendar:";
+        String results = "Estos son los modelos que te puedo recomendar:";
 
         if(mt.contains(new MTEntry("tipoProducto","notebook"))) {
 
             for(Notebook n : dbInstance.getNotebookList()){
-                if(n.filtrar(mt)) results += n.toString();
+                if(n.filtrar(mt)) {results += n.toString(); elementos++;}
             }
 
         }
         else if(mt.contains(new MTEntry("tipoProducto","celular"))) {
 
             for(Celular n : dbInstance.getCelularList()){
-                if(n.filtrar(mt)) results += n.toString();
+                if(n.filtrar(mt)) {results += n.toString(); elementos++;}
             }
 
         }
         else if (mt.contains(new MTEntry("tipoProducto","tablet"))) {
 
             for(Tablet n : dbInstance.getTabletList()){
-                if(n.filtrar(mt)) results += n.toString();
+                if(n.filtrar(mt)) {results += n.toString(); elementos++;}
             }
 
         }
         else if (mt.contains(new MTEntry("tipoProducto","televisor"))) {
 
             for(Televisor n : dbInstance.getTelevisorList()){
-                if(n.filtrar(mt)) results += n.toString();
+                if(n.filtrar(mt)) {results += n.toString(); elementos++;}
             }
-
-
 
         }
         else {
 
-            results = ">> Bernard (" + new SimpleDateFormat("HH:mm").format(new Date()) + "): Lo lamento, no he podido encontrar ningun resultado :(";
+            results = "Lo lamento, no he podido encontrar ningun resultado :(";
         }
+
+        if(elementos == 0) results = "Lo lamento, no he podido encontrar ningun resultado :(";
 
         return results;
     }
