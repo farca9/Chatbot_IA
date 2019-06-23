@@ -106,7 +106,7 @@ public class Televisor {
             }
 
             if (parametros.get(i).nombre.equals("dimPantalla")) {
-                if (!parametros.get(i).value.toString().equals(dimPantalla)) {
+                if (!parametros.get(i).value.toString().equals(getTamanioPantalla())) {
                     flag = false;
                 }
             }
@@ -133,7 +133,7 @@ public class Televisor {
 
 
             if (parametros.get(i).nombre.equals("precio")) {
-                if (!parametros.get(i).value.toString().equals(precio)) {
+                if (!parametros.get(i).value.toString().equals(getClasePrecio())) {
                     flag = false;
                 }
             }

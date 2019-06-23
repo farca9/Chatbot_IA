@@ -152,31 +152,31 @@ public class Tablet {
             }
 
             if (parametros.get(i).nombre.equals("dimPantalla")) {
-                if (!parametros.get(i).value.toString().equals(dimPantalla)) {
+                if (!parametros.get(i).value.toString().equals(getTamanioPantalla())) {
                     flag = false;
                 }
             }
 
             if (parametros.get(i).nombre.equals("ram")) {
-                if (!parametros.get(i).value.toString().equals(cantidadRam)) {
+                if (!parametros.get(i).value.toString().equals(getTamanioRam())) {
                     flag = false;
                 }
             }
 
             if (parametros.get(i).nombre.equals("almacenamiento")) {
-                if (!parametros.get(i).value.toString().equals(cantidadStorage)) {
+                if (!parametros.get(i).value.toString().equals(getTamanioAlmacenamiento())) {
                     flag = false;
                 }
             }
 
             if (parametros.get(i).nombre.equals("camara")) {
-                if (!parametros.get(i).value.toString().equals(resolucionCamara)) {
+                if (!parametros.get(i).value.toString().equals(getResolucionMP())) {
                     flag = false;
                 }
             }
 
             if (parametros.get(i).nombre.equals("precio")) {
-                if (!parametros.get(i).value.toString().equals(precio)) {
+                if (!parametros.get(i).value.toString().equals(getClasePrecio())) {
                     flag = false;
                 }
             }
