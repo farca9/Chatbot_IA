@@ -80,7 +80,7 @@ public class Regla {
     public String toString() {
         String retorno="";
         retorno+="R#"+id+" [";
-        boolean e1=true, e2=true, e3=true, e4=true;
+        boolean e1=true, e3=true, e4=true;
         for(Lema l: lemasCondicion){
             retorno+=l.getConcepto()+", ";
             e1=false;
@@ -89,9 +89,7 @@ public class Regla {
         retorno+="] <";
         for(MTEntry mtEntry: mtEntriesPresente){
             retorno+=mtEntry.toString()+", ";
-            e2=false;
         }
-        if(!e2)retorno=retorno.substring(0,retorno.length()-2);
         for(MTEntry mtEntry: mtEntriesAusente){
             retorno+="!"+mtEntry.toString()+", ";
             e3=false;
