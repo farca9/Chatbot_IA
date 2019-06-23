@@ -142,4 +142,8 @@ public class Televisor {
 
         return flag;
     }
+
+    public String toString(){
+        return "MODELO: " + codigoModelo + "\nMARCA: " + marca + "\nPRECIO: $" + precio + "\n";
+    }
 }
