@@ -95,4 +95,77 @@ public class Notebook {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
+
+    public String getTamanioPantalla(){
+
+        String resultado;
+
+        if(dimPantalla <= 14.0) resultado = "pequenio";
+        else if(dimPantalla > 16.0) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getTamanioAlmacenamiento(){
+
+        String resultado;
+
+        switch(cantidadStorage){
+            case "1 TB + 256 GB SSD": resultado = "grande"; break;
+            case "1 TB + 128 GB SSD": resultado = "grande"; break;
+            case "1 TB + 16 GB SSD": resultado = "grande"; break;
+            case "1 TB": resultado = "normal"; break;
+            case "512 GB": resultado = "normal"; break;
+            case "512 GB SSD": resultado = "normal"; break;
+            case "256 GB SSD": resultado = "pequenio"; break;
+            case "128 GB SSD": resultado = "pequenio"; break;
+            case "32 GB SSD": resultado = "pequenio"; break;
+            default: resultado = "";
+        }
+
+        return resultado;
+
+    }
+
+    public String getTamanioRam(){
+
+        String resultado;
+
+        if(cantidadRam <= 4) resultado = "pequenio";
+        else if(cantidadRam > 8) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getTipoGPU(){
+
+        String resultado;
+
+        if(gpu.contains("Intel") || gpu.contains("AMD")) resultado = "integrada";
+        else resultado = "dedicada";
+
+        return resultado;
+
+    }
+
+    public String getClasePrecio(){
+
+        String resultado;
+
+        if(precio <= 30000.0) resultado = "pequenio";
+        else if(precio > 70000.0) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+
+
+
+
 }

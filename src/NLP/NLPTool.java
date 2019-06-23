@@ -21,7 +21,7 @@ public class NLPTool {
         lemas.add(new Lema("notebook", new ArrayList<>(Arrays.asList("computadora","ordenador","laptop","portatil"))));
         lemas.add(new Lema("celular", new ArrayList<>(Arrays.asList("smartphone","telefono","movil"))));
         lemas.add(new Lema("tablet", new ArrayList<>(Arrays.asList("tableta"))));
-        lemas.add(new Lema("televisor", new ArrayList<>(Arrays.asList("tv"))));
+        lemas.add(new Lema("televisor", new ArrayList<>(Arrays.asList("tv","television"))));
 
         lemas.add(new Lema("marca", new ArrayList<>(Arrays.asList("samsung","motorola","lg","alcatel","apple","google","huawei","acer","asus","exo","hp","lenovo","apple","bangho","dell","next technologies","next","philco","ion","tcl","kanju","viewsonic","xview","bgh","hisense","ken brown","noblex","philips","tcl"))));
         lemas.add(new Lema("acer", new ArrayList<>(Arrays.asList(" acer "))));
@@ -61,7 +61,7 @@ public class NLPTool {
         lemas.add(new Lema("a6", new ArrayList<>(Arrays.asList("amd a6"))));
 
         lemas.add(new Lema("pantalla", new ArrayList<>(Arrays.asList("screen"))));
-        lemas.add(new Lema("almacenamiento", new ArrayList<>(Arrays.asList("storage","disco","memoria fisica"))));
+        lemas.add(new Lema("almacenamiento", new ArrayList<>(Arrays.asList("storage","disco","memoria fisica", "ssd"))));
         lemas.add(new Lema("ram", new ArrayList<>(Arrays.asList("ram"))));
         lemas.add(new Lema("precio", new ArrayList<>(Arrays.asList("gastar","presupuesto","monto","estiro","gasto","$"))));
         lemas.add(new Lema("camara", new ArrayList<>(Arrays.asList("resolucion camara"))));

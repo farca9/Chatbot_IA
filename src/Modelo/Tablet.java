@@ -75,4 +75,65 @@ public class Tablet {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
+
+    public String getTamanioPantalla(){
+
+        String resultado;
+
+        if(dimPantalla <= 7.0) resultado = "pequenio";
+        else if(dimPantalla > 10.0) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getTamanioRam(){
+
+        String resultado;
+
+        if(cantidadRam <= 1) resultado = "pequenio";
+        else if(cantidadRam > 2) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getTamanioAlmacenamiento(){
+
+        String resultado;
+
+        if(cantidadStorage <= 8) resultado = "pequenio";
+        else if(cantidadStorage > 16) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getResolucionMP(){
+
+        String resultado;
+
+        if(resolucionCamara <= 2.0) resultado = "pequenio";
+        else if(resolucionCamara > 6) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
+    public String getClasePrecio(){
+
+        String resultado;
+
+        if(precio <= 3000.0) resultado = "pequenio";
+        else if(precio > 8000.0) resultado = "grande";
+        else resultado = "normal";
+
+        return resultado;
+
+    }
+
 }
