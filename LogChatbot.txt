@@ -2,43 +2,52 @@
 Inner Reglas activas: R#1 
 Criterios de resolucion utilizados: (Especificidad)
 Inner Regla seleccionada: R#1 [] <!ask(tipoProducto), !ans(tipoProducto)> --> <ask(tipoProducto)> 'Que producto esta buscando?'
+[televisor]
 
-Reglas activas: R#2 R#6 R#7 R#8 R#9 R#10 R#11 R#12 
+Reglas activas: R#5 R#194 R#195 R#196 R#197 R#198 
 Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: R#2 [notebook] <ask(tipoProducto), !ans(tipoProducto)> --> <ans(tipoProducto), tipoProducto(notebook)> 'Perfecto, buscaremos computadoras portatiles'
+Regla seleccionada: R#5 [televisor] <ask(tipoProducto), !ans(tipoProducto)> --> <ans(tipoProducto), tipoProducto(televisor)> 'Perfecto, buscaremos televisores'
 
-Inner Reglas activas: R#13 R#14 R#15 R#16 R#17 R#18 R#19 
+Inner Reglas activas: R#199 R#200 R#201 R#202 R#203 
 Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#14 [] <tipoProducto(notebook), !ans(cpu), !ask(cpu)> --> <ask(cpu)> 'Que procesador quiere?'
+Inner Regla seleccionada: R#201 [] <tipoProducto(televisor), !ans(tecnologia), !ask(tecnologia)> --> <ask(tecnologia)> 'Que tecnologia desea (SMART o LED)?'
+[led]
 
-Reglas activas: R#30 
+Reglas activas: R#228 R#229 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Regla seleccionada: R#228 [led] <tipoProducto(televisor), ask(tecnologia), !ans(tecnologia)> --> <ans(tecnologia), tecnologia(led)> 'Perfecto. Buscare televisores LED'
+
+Inner Reglas activas: R#199 R#200 R#202 R#203 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Inner Regla seleccionada: R#203 [] <tipoProducto(televisor), !ans(precio), !ask(precio)> --> <ask(precio)> 'Cuanto esta dispuesto a gastar?'
+[pequenio]
+
+Reglas activas: R#240 R#241 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Regla seleccionada: R#241 [pequenio] <tipoProducto(televisor), ask(precio), !ans(precio)> --> <ans(precio), precio(pequenio)> 'Buenisimo! Buscare televisores con precios bajos'
+
+Inner Reglas activas: R#199 R#200 R#202 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Inner Regla seleccionada: R#202 [] <tipoProducto(televisor), !ans(resolucion), !ask(resolucion)> --> <ask(resolucion)> 'Que resolucion quiere (HD, FHD, UHD)?'
+[fhd, hd]
+
+Reglas activas: R#230 R#231 R#232 R#233 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Regla seleccionada: R#231 [hd] <tipoProducto(televisor), ask(resolucion), !ans(resolucion)> --> <ans(resolucion), resolucion(hd)> 'Buenisimo! Buscare televisores que sean HD'
+
+Inner Reglas activas: R#199 R#200 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Inner Regla seleccionada: R#200 [] <tipoProducto(televisor), !ans(dimPantalla), !ask(dimPantalla)> --> <ask(dimPantalla)> 'Quiere una pantalla grande, mediana o chica?'
+[pequenio]
+
+Reglas activas: R#224 R#225 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Regla seleccionada: R#225 [pequenio] <tipoProducto(televisor), ask(dimPantalla), !ans(dimPantalla)> --> <ans(dimPantalla), dimPantalla(pequenio)> 'Buenisimo! Buscare televisores con pantalla pequeño'
+
+Inner Reglas activas: R#199 
 Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: R#30 [i7] <tipoProducto(notebook), ask(cpu), !ans(cpu)> --> <ans(cpu), cpu(i7)> 'Perfecto. Buscare procesadores i7'
+Inner Regla seleccionada: R#199 [] <tipoProducto(televisor), !ans(marca), !ans(marca)> --> <ask(marca)> 'Que marca quiere?'
 
-Inner Reglas activas: R#13 R#15 R#16 R#17 R#18 R#19 
-Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#18 [] <tipoProducto(notebook), !ans(gpu), !ask(gpu)> --> <ask(gpu)> 'Quiere GPU integrada o dedicada?'
-
-Reglas activas: R#44 
-Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: R#44 [dedicada] <tipoProducto(notebook), ask(gpu), !ans(gpu)> --> <ans(gpu), gpu(dedicada)> 'Perfecto. Buscare con gpu dedicada'
-
-Inner Reglas activas: R#13 R#15 R#16 R#17 R#19 
-Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#13 [] <tipoProducto(notebook), !ans(marca), !ans(marca)> --> <ask(marca)> 'Que marca quiere?'
-
-Reglas activas: R#20 
-Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: R#20 [acer] <tipoProducto(notebook), ask(marca), !ans(marca)> --> <ans(marca), marca(acer)> 'Perfecto. Buscare marcas Acer'
-
-Inner Reglas activas: R#15 R#16 R#17 R#19 
-Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#16 [] <tipoProducto(notebook), !ans(almacenamiento), !ask(almacenamiento)> --> <ask(almacenamiento)> 'Cuanto almacenamiento quiere? Mucho o poca?'
-
-Reglas activas: R#39 
-Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: R#39 [pequenio] <tipoProducto(notebook), ask(almacenamiento), !ans(almacenamiento)> --> <ans(almacenamiento), almacenamiento(pequenio)> 'Perfecto. Buscare con poco almacenamiento'
-
-Inner Reglas activas: R#15 R#17 R#19 
-Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
-Inner Regla seleccionada: R#19 [] <tipoProducto(notebook), !ans(precio), !ask(precio)> --> <ask(precio)> 'Cuanto esta dispuesto a gastar?'
+Inner Reglas activas: R#1 
+Criterios de resolucion utilizados: (Especificidad)
+Inner Regla seleccionada: R#1 [] <!ask(tipoProducto), !ans(tipoProducto)> --> <ask(tipoProducto)> 'Que producto esta buscando?'

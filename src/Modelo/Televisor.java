@@ -118,7 +118,7 @@ public class Televisor {
                     }
                 }
                 else{
-                    if (!parametros.get(i).value.toString().equals("led")) {
+                    if (!parametros.get(i).value.toString().equals("lcd")) {
                         flag = false;
                     }
                 }

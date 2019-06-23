@@ -1847,7 +1847,7 @@ public class MP {
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("tipoProducto", null))),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tecnologia"))),
-                "Que tecnologia desea (SMART o LCD)?")); idp++;
+                "Que tecnologia desea (SMART o LED)?")); idp++;
 
         //RESOLUCION
         reglas.add(new Regla(
@@ -1898,7 +1898,7 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("ask", "tecnologia"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "tecnologia"))),
-                "Que tecnologia desea (SMART o LCD)?")); idp++;
+                "Que tecnologia desea (SMART o LED)?")); idp++;
 
         //RESOLUCION
         reglas.add(new Regla(
@@ -2140,7 +2140,7 @@ public class MP {
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("led"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tencologia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tecnologia"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("tecnologia", "led"))),
                 "Perfecto. Buscare televisores LED")); idp++;
@@ -2148,7 +2148,7 @@ public class MP {
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("led"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tencologia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "tecnologia"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tecnologia"), new MTEntry("tecnologia", "led"))),
                 "Buenisimo! Buscare televisores que sean LED")); idp++;
