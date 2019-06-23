@@ -89,7 +89,6 @@ public class ChatbotCore {
         else {
 
             return "Lo lamento, no he podido encontrar ningun resultado";
-
         }
 
         return "asd";
@@ -238,5 +237,7 @@ public class ChatbotCore {
     public void clearChat(){
         MT.getInstance().clear();
     }
+
+
 
 }

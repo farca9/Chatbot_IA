@@ -988,7 +988,7 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "tablet"), new MTEntry("ask", "marca"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "samsung"))),
-                "Perfecto. Buscare marcas Alcatel")); idp++;
+                "Perfecto. Buscare marcas Samsung")); idp++;
 
         //ALCATEL
         reglas.add(new Regla(
