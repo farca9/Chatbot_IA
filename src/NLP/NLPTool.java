@@ -8,6 +8,7 @@ public class NLPTool {
 
     private List<Lema> lemas;
 
+
     //Singleton
     private static NLPTool instance = new NLPTool();
     public static NLPTool getInstance(){
@@ -86,6 +87,8 @@ public class NLPTool {
 
     public List<Lema> detectarLemas(String userInput){
 
+        userInput = " "+userInput+" ";
+
         ArrayList<Lema> lemasDetectados = new ArrayList<>();
 
         for(Lema lema : lemas){
@@ -95,5 +98,9 @@ public class NLPTool {
         }
 
         return lemasDetectados;
+    }
+
+    public List<Lema> getLemas() {
+        return lemas;
     }
 }

@@ -1,6 +1,8 @@
 package NLP;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Lema {
 
@@ -10,6 +12,16 @@ public class Lema {
     public Lema(String concepto, List<String> sinonimos) {
         this.concepto = concepto;
         this.sinonimos = sinonimos;
+    }
+
+    public Lema(String concepto){
+        this.concepto=concepto;
+        this.sinonimos=new ArrayList<>();
+    }
+
+    @Override
+    public String toString() {
+        return concepto;
     }
 
     public String getConcepto() {
@@ -41,5 +53,20 @@ public class Lema {
         }
 
         return false;
+    }
+
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Lema lema = (Lema) o;
+        return Objects.equals(concepto, lema.concepto);
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
     }
 }
