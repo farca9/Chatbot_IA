@@ -2,6 +2,10 @@ package Core;
 
 import Exceptions.NoLemasException;
 import Exceptions.NoRulesException;
+import Modelo.Celular;
+import Modelo.Notebook;
+import Modelo.Tablet;
+import Modelo.Televisor;
 import NLP.Lema;
 import NLP.NLPTool;
 import Produccion.MP;
@@ -48,16 +52,41 @@ public class ChatbotCore {
         //Cuando el cliente presiona el boton de recomendar resultados
         //Se asume que cuanto mucho se ofrecen 3 productos
         List<MTEntry> mt = MT.getInstance().getElementosMT();
+        List<Notebook> notebookResults = new ArrayList<Notebook>();
+        List<Celular> celularResults = new ArrayList<Celular>();
+        List<Tablet> tabletResults = new ArrayList<Tablet>();
+        List<Televisor> televisorResults = new ArrayList<Televisor>();
+        DB dbInstance = DB.getInstance();
 
-        if(mt.contains(new MTEntry("tipoProducto","notebook"))){
+        if(mt.contains(new MTEntry("tipoProducto","notebook"))) {
 
-        } else if(mt.contains(new MTEntry("tipoProducto","celular"))) {
+            for(Notebook n : dbInstance.getNotebookList()){
+                if(n.filtrar(mt)) notebookResults.add(n);
+            }
 
-        } else if (mt.contains(new MTEntry("tipoProducto","tablet"))) {
+        }
+        else if(mt.contains(new MTEntry("tipoProducto","celular"))) {
 
-        } else if (mt.contains(new MTEntry("tipoProducto","televisor"))) {
+            for(Celular n : dbInstance.getNotebookList()){
+                if(n.filtrar(mt)) celularResults.add(n);
+            }
 
-        } else {
+        }
+        else if (mt.contains(new MTEntry("tipoProducto","tablet"))) {
+
+            for(Tablet n : dbInstance.getNotebookList()){
+                if(n.filtrar(mt)) tabletResults.add(n);
+            }
+
+        }
+        else if (mt.contains(new MTEntry("tipoProducto","televisor"))) {
+
+            for(Televisor n : dbInstance.getNotebookList()){
+                if(n.filtrar(mt)) televisorResults.add(n);
+            }
+
+        }
+        else {
 
             return "Lo lamento, no he podido encontrar ningun resultado";
 

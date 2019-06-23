@@ -137,6 +137,39 @@ public class DB {
         return televisores;
     }
 
+    public List<Notebook> getNotebookList() {
+        return notebookList;
+    }
 
+    public void setNotebookList(List<Notebook> notebookList) {
+        this.notebookList = notebookList;
+    }
 
+    public List<Celular> getCelularList() {
+        return celularList;
+    }
+
+    public void setCelularList(List<Celular> celularList) {
+        this.celularList = celularList;
+    }
+
+    public List<Tablet> getTabletList() {
+        return tabletList;
+    }
+
+    public void setTabletList(List<Tablet> tabletList) {
+        this.tabletList = tabletList;
+    }
+
+    public List<Televisor> getTelevisorList() {
+        return televisorList;
+    }
+
+    public void setTelevisorList(List<Televisor> televisorList) {
+        this.televisorList = televisorList;
+    }
+
+    public static void setInstance(DB instance) {
+        DB.instance = instance;
+    }
 }
