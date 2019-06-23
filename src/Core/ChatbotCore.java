@@ -123,7 +123,7 @@ public class ChatbotCore {
         System.out.println("");
         System.out.print("Reglas activas: ");
         for(Regla r: reglasActivas) {
-            System.out.print(r.toShortString()+",");
+            System.out.print(r.toShortString()+" ");
         }
         System.out.println("");
 
@@ -157,8 +157,9 @@ public class ChatbotCore {
         System.out.println("");
         System.out.print("Inner Reglas activas: ");
         for(Regla r: reglasActivas) {
-            System.out.print(r.toShortString()+",");
+            System.out.print(r.toShortString()+" ");
         }
+
         System.out.println("");
 
         //Resolucion de conflictos
@@ -174,6 +175,13 @@ public class ChatbotCore {
 
     private Regla solveConflict(List<Regla> reglasActivas) {
 
+        String explanation="";
+        boolean filteredByDuplicidad=false;
+        boolean filteredByEspecificidad=false;
+        boolean filteredByNovedad=false;
+        boolean filteredByPrioridad=false;
+        boolean filteredByRandom=false;
+
         List<Regla> aux1=new ArrayList<>();
         List<Regla> aux2=new ArrayList<>();
 
@@ -181,6 +189,8 @@ public class ChatbotCore {
         for (Regla r: reglasActivas){
             if(!r.equals(reglaPrevia)){
                 aux1.add(r);
+            } else {
+                filteredByDuplicidad=true;
             }
         }
 
@@ -189,6 +199,7 @@ public class ChatbotCore {
         for(Regla r: aux1){ //Se obtiene cual es la especificidad maxima
             if(r.getEspecificidad()>maximaEspecificidad){
                 maximaEspecificidad = r.getEspecificidad();
+                filteredByEspecificidad=true;
             }
         }
         for(Regla r:aux1){ //Se queda con las reglas mas especificas
@@ -209,6 +220,7 @@ public class ChatbotCore {
                 }
             }
             if(!aux2.isEmpty()){
+                filteredByNovedad=true;
                 break;
             }
         }
@@ -221,6 +233,7 @@ public class ChatbotCore {
         /*int candidatePriority=Integer.MAX_VALUE;
         for(Regla r: aux1){
             if(r.getId()<candidatePriority){
+                filteredByPrioridad=true;
                 candidatePriority=r.getId().intValue();
                 aux2=new ArrayList<>();
                 aux2.add(r);
@@ -238,6 +251,20 @@ public class ChatbotCore {
         if(aux1.isEmpty()) return null;
 
         //Aleatorio
+        if(aux1.size()>1){
+            filteredByRandom=true;
+        }
+
+        explanation+="Criterios de resolucion utilizados: (";
+        if(filteredByDuplicidad)explanation+="Duplicidad, ";
+        if(filteredByEspecificidad)explanation+="Especificidad, ";
+        if(filteredByNovedad)explanation+="Novedad, ";
+        if(filteredByPrioridad)explanation+="Prioridad, ";
+        if(filteredByRandom)explanation+="Aleatoriedad, ";
+        if(filteredByDuplicidad || filteredByEspecificidad || filteredByNovedad || filteredByPrioridad || filteredByRandom) explanation=explanation.substring(0,explanation.length()-2);
+        explanation+=")";
+        System.out.println(explanation);
+
         return aux1.get(new Random().nextInt(aux1.size()));
     }
 
