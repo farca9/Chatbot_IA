@@ -148,7 +148,7 @@ public class Celular {
 
         while (flag && i < parametros.size()) {
             if (parametros.get(i).nombre.equals("marca")) {
-                if (!parametros.get(i).value.toString().equals(marca)) {
+                if (!parametros.get(i).value.toString().equals(marca.toLowerCase())) {
                     flag = false;
                 }
             }

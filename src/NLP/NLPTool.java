@@ -24,7 +24,7 @@ public class NLPTool {
         lemas.add(new Lema("televisor", new ArrayList<>(Arrays.asList("tv","television","televisor","tele"))));
 
         lemas.add(new Lema("marca", new ArrayList<>(Arrays.asList("samsung","motorola","lg","alcatel","apple","google","huawei","acer","asus","exo","hp","lenovo","apple","bangho","dell","next technologies","next","philco","ion","tcl","kanju","viewsonic","xview","bgh","hisense","ken brown","noblex","philips","tcl"))));
-        lemas.add(new Lema("acer", new ArrayList<>(Arrays.asList(" acer "))));
+        lemas.add(new Lema("acer", new ArrayList<>(Arrays.asList("acer"))));
         lemas.add(new Lema("alcatel", new ArrayList<>(Arrays.asList(" alcatel "))));
         lemas.add(new Lema("apple", new ArrayList<>(Arrays.asList(" apple "))));
         lemas.add(new Lema("asus", new ArrayList<>(Arrays.asList(" asus "))));

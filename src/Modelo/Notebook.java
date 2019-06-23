@@ -175,8 +175,8 @@ public class Notebook {
 
         while (flag && i < parametros.size()) {
 
-            if (parametros.get(i).nombre.equals("marca") && !parametros.get(i).value.toString().equals(this.marca)) flag = false;
-            if (parametros.get(i).nombre.equals("cpu") && !parametros.get(i).value.toString().equals(this.procesador)) flag = false;
+            if (parametros.get(i).nombre.equals("marca") && !parametros.get(i).value.toString().equals(this.marca.toLowerCase())) flag = false;
+            if (parametros.get(i).nombre.equals("cpu") && !parametros.get(i).value.toString().equals(this.procesador.toLowerCase())) flag = false;
             if (parametros.get(i).nombre.equals("dimPantalla") && !parametros.get(i).value.toString().equals(this.getTamanioPantalla())) flag = false;
             if (parametros.get(i).nombre.equals("almacenamiento") && !parametros.get(i).value.toString().equals(this.getTamanioAlmacenamiento())) flag = false;
             if (parametros.get(i).nombre.equals("ram") && !parametros.get(i).value.toString().equals(this.getTamanioRam())) flag = false;
@@ -191,7 +191,7 @@ public class Notebook {
 
     public String toString(){
 
-        return this.marca+" "+this.codigoModelo+": Posee un procesador "+this.marcaProcesador+" "+this.procesador+" y "+this.cantidadRam+" GB de RAM, "+this.cantidadStorage+" de almacenamiento, una pantalla de "+this.dimPantalla+"'' y una placa de video "+this.getTipoGPU()+" "+this.gpu+". Su precio es de $"+this.precio+".";
+        return "\n" + this.marca+" "+this.codigoModelo+": \nPosee un procesador "+this.marcaProcesador+" "+this.procesador+" y "+this.cantidadRam+" GB de RAM, "+this.cantidadStorage+" de almacenamiento, una pantalla de "+this.dimPantalla+"'' y una placa de video "+this.getTipoGPU()+" "+this.gpu+". \nSu precio es de $"+this.precio+".\n";
 
     }
 

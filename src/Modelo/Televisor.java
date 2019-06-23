@@ -100,7 +100,7 @@ public class Televisor {
 
         while (flag && i < parametros.size()) {
             if (parametros.get(i).nombre.equals("marca")) {
-                if (!parametros.get(i).value.toString().equals(marca)) {
+                if (!parametros.get(i).value.toString().equals(marca.toLowerCase())) {
                     flag = false;
                 }
             }
@@ -126,7 +126,7 @@ public class Televisor {
             }
 
             if (parametros.get(i).nombre.equals("resolucion")) {
-                if (!parametros.get(i).value.toString().equals(resolucion)) {
+                if (!parametros.get(i).value.toString().equals(resolucion.toLowerCase())) {
                     flag = false;
                 }
             }
