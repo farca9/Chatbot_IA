@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="741b9551-1580-4605-a9d4-b80af9b08d8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LogChatbot.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LogChatbot.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produccion/MP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produccion/MP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,17 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="927">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/Tablet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+            <state relative-caret-position="230">
+              <caret line="71" column="184" selection-start-line="71" selection-start-column="184" selection-end-line="71" selection-end-column="184" />
             </state>
           </provider>
         </entry>
@@ -37,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="3093" column="20" lean-forward="true" selection-start-line="3093" selection-start-column="20" selection-end-line="3093" selection-end-column="20" />
+            <state relative-caret-position="4274">
+              <caret line="2972" column="49" selection-start-line="2972" selection-start-column="49" selection-end-line="2972" selection-end-column="49" />
               <folding>
                 <element signature="method#cargarReglas#0;class#MP#0" />
                 <element signature="method#cargarReglasGenerales#0;class#MP#0" />
@@ -48,16 +37,8 @@
                 <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
                 <element signature="method#cargarReglasCelularesVendedor#0;class#MP#0" />
                 <element signature="method#cargarReglasTabletsVendedor#0;class#MP#0" />
+                <element signature="method#cargarReglasTelevisoresVendedor#0;class#MP#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -71,6 +52,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Produccion/MP.java" />
+        <option value="$PROJECT_DIR$/src/NLP/NLPTool.java" />
       </list>
     </option>
   </component>
@@ -167,7 +149,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147000" />
+    <option name="totallyTimeSpent" value="395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -221,6 +203,23 @@
     </option>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Tablet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="96" column="25" lean-forward="true" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="71" column="184" selection-start-line="71" selection-start-column="184" selection-end-line="71" selection-end-column="184" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -228,20 +227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="927">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="3093" column="20" lean-forward="true" selection-start-line="3093" selection-start-column="20" selection-end-line="3093" selection-end-column="20" />
+        <state relative-caret-position="4274">
+          <caret line="2972" column="49" selection-start-line="2972" selection-start-column="49" selection-end-line="2972" selection-end-column="49" />
           <folding>
             <element signature="method#cargarReglas#0;class#MP#0" />
             <element signature="method#cargarReglasGenerales#0;class#MP#0" />
@@ -251,6 +240,7 @@
             <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
             <element signature="method#cargarReglasCelularesVendedor#0;class#MP#0" />
             <element signature="method#cargarReglasTabletsVendedor#0;class#MP#0" />
+            <element signature="method#cargarReglasTelevisoresVendedor#0;class#MP#0" />
           </folding>
         </state>
       </provider>
