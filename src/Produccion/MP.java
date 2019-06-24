@@ -109,11 +109,27 @@ public class MP {
 
         reglas.add(new Regla(
                 idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "notebook"))),
+                "Buenisimo! Buscare notebooks para usted")); idp++;
+
+        reglas.add(new Regla(
+                idp,
                 new ArrayList<>(Arrays.asList(new Lema("celular"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "celular"))),
                 "Perfecto, buscaremos celulares")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "celular"))),
+                "Buenisimo! Buscare celulares para usted")); idp++;
 
         reglas.add(new Regla(
                 idp,
@@ -125,12 +141,27 @@ public class MP {
 
         reglas.add(new Regla(
                 idp,
+                new ArrayList<>(Arrays.asList(new Lema("tablet"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "tablet"))),
+                "Buenisimo! Buscare tablets para usted")); idp++;
+
+        reglas.add(new Regla(
+                idp,
                 new ArrayList<>(Arrays.asList(new Lema("televisor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "televisor"))),
                 "Perfecto, buscaremos televisores")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("televisor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user","cliente"), new MTEntry("ask", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "tipoProducto"), new MTEntry("tipoProducto", "televisor"))),
+                "Buenisimo! Buscare televisores para usted")); idp++;
     }
 
     public void cargarReglasComputadoras(){
