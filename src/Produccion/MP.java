@@ -26,7 +26,7 @@ public class MP {
 
     private void cargarReglasVendedor() {
         cargarReglasComputadorasVendedor();
-
+        cargarReglasCelularesVendedor();
 
 
     }
@@ -2307,9 +2307,6 @@ public class MP {
     }
 
     public void cargarReglasComputadorasVendedor(){
-
-        System.out.println(idp);
-
         /*reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("notebook"),new Lema("i5"))),
@@ -2563,6 +2560,184 @@ public class MP {
 
 
 
+    }
+
+    public void cargarReglasCelularesVendedor(){
+        //MARCA
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("samsung"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("marca", "samsung"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("motorola"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("marca", "motorola"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("lg"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("marca", "lg"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("alcatel"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("marca", "alcatel"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("apple"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("marca", "apple"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("google"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("marca", "google"))),
+                "Buscando resultados....")); idp++;
+
+        //PANTALLA
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("pantalla"), new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("dimPantalla", "grande"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("pantalla"), new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("dimPantalla", "normal"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("pantalla"), new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("dimPantalla", "pequenio"))),
+                "Buscando resultados....")); idp++;
+
+        //RAM
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("ram"), new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("ram", "grande"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("ram"), new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("ram", "normal"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("ram"), new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("ram", "pequenio"))),
+                "Buscando resultados....")); idp++;
+
+
+        //ALMACENAMIENTO
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("almacenamiento"), new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("almacenamiento", "grande"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("almacenamiento"), new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("almacenamiento", "normal"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("almacenamiento"), new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("almacenamiento", "pequenio"))),
+                "Buscando resultados....")); idp++;
+
+        //RES CAMARA
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("camara"), new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("camara", "grande"))),
+                "Buscando resultados....")); idp++;
+
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("camara"), new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("camara", "normal"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("camara"), new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("camara", "pequenio"))),
+                "Buscando resultados....")); idp++;
+
+        //PRECIO
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("precio"), new Lema("grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("precio", "grande"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("precio"), new Lema("normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("precio", "normal"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("celular"), new Lema("precio"), new Lema("pequenio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "celular"), new MTEntry("precio", "pequenio"))),
+                "Buscando resultados....")); idp++;
     }
     //
 
