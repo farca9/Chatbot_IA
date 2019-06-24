@@ -31,10 +31,14 @@ public class Chatbox {
 
     private void createUIComponents() {
 
-        StyleConstants.setForeground(styleUser, Color.BLUE);
+        StyleConstants.setForeground(styleUser, Color.WHITE);
         StyleConstants.setAlignment(styleUser, StyleConstants.ALIGN_RIGHT);
-        StyleConstants.setForeground(styleBot, Color.RED);
+        StyleConstants.setForeground(styleBot, new Color(28,160,241));
         StyleConstants.setAlignment(styleBot, StyleConstants.ALIGN_LEFT);
+        mainPanel.setBackground(new Color(17,23,27));
+        chatTextPane.setBackground(new Color(42,52,61));
+        inputTextArea.setBackground(new Color(42,52,61));
+        inputTextArea.setForeground(Color.WHITE);
 
     }
 
