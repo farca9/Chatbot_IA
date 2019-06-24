@@ -1,8 +1,25 @@
 ========= INICIO EJECUCION
-222
 
 -- Iteracion N°1
 MT Actual: []
 Inner Reglas activas: R#1 
 Criterios de resolucion utilizados: (Especificidad)
 Inner Regla seleccionada: Regla 1) L[] MT<!ask(user), !ans(user)> --> MT+<ask(user)> ''Es usted cliente o vendedor?''
+
+-- Iteracion N°2
+MT Actual: [ask(user)]
+Reglas activas: R#4 
+Criterios de resolucion utilizados: (Especificidad, Novedad)
+Regla seleccionada: Regla 4) L[vendedor] MT<ask(user), !ans(user)> --> MT+<user(vendedor)> ''Bienvenido vendedor''
+
+-- Iteracion N°3
+MT Actual: [ask(user), user(vendedor)]
+Inner Reglas activas: R#5 
+Criterios de resolucion utilizados: (Especificidad, Novedad)
+Inner Regla seleccionada: Regla 5) L[] MT<user(vendedor), !vend(in)> --> MT+<> ''Ingrese que tipo de producto busca y con que caracteristica en particular''
+
+-- Iteracion N°4
+MT Actual: [ask(user), user(vendedor)]
+Reglas activas: R#266 
+Criterios de resolucion utilizados: (Especificidad, Novedad)
+Regla seleccionada: Regla 266) L[celular, camara, grande] MT<user(vendedor), !vend(in)> --> MT+<vend(in), tipoProducto(celular), camara(grande)> ''Buscando resultados....''
