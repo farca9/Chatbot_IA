@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19b242a6-84eb-4d50-99e7-3a455590b377" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChatbotIA/UI/Chatbox.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Produccion/MP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produccion/MP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="774" column="76" selection-start-line="768" selection-start-column="8" selection-end-line="774" selection-end-column="76" />
+            <state relative-caret-position="199">
+              <caret line="2309" selection-start-line="2309" selection-end-line="2309" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#301#302#0" expanded="true" />
@@ -33,6 +30,7 @@
                 <element signature="e#705#706#0" expanded="true" />
                 <element signature="e#741#742#0" expanded="true" />
                 <element signature="method#cargarReglasGenerales#0;class#MP#0" />
+                <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
                 <element signature="method#cargarReglasCelulares#0;class#MP#0" />
                 <element signature="method#cargarReglasTablets#0;class#MP#0" />
                 <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
@@ -41,18 +39,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="129" column="26" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
+            <state relative-caret-position="-1423">
+              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="e#635#636#0" expanded="true" />
                 <element signature="e#666#667#0" expanded="true" />
                 <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
                 <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
-                <element signature="method#innerSendAndReceive#0;class#ChatbotCore#0" />
-                <element signature="method#solveConflict#0;class#ChatbotCore#0" />
               </folding>
             </state>
           </provider>
@@ -61,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Produccion/Regla.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            <state relative-caret-position="575">
+              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -183,7 +179,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4241000" />
+    <option name="totallyTimeSpent" value="4529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -231,32 +227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="129" column="26" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
-          <folding>
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
-            <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
-            <element signature="method#innerSendAndReceive#0;class#ChatbotCore#0" />
-            <element signature="method#solveConflict#0;class#ChatbotCore#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Produccion/Regla.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="774" column="76" selection-start-line="768" selection-start-column="8" selection-end-line="774" selection-end-column="76" />
+        <state relative-caret-position="199">
+          <caret line="2309" selection-start-line="2309" selection-end-line="2309" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#301#302#0" expanded="true" />
@@ -268,9 +242,30 @@
             <element signature="e#705#706#0" expanded="true" />
             <element signature="e#741#742#0" expanded="true" />
             <element signature="method#cargarReglasGenerales#0;class#MP#0" />
+            <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
             <element signature="method#cargarReglasCelulares#0;class#MP#0" />
             <element signature="method#cargarReglasTablets#0;class#MP#0" />
             <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Produccion/Regla.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1423">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
+            <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
           </folding>
         </state>
       </provider>
