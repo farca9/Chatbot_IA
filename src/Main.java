@@ -14,11 +14,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*try {
+        try {
             System.setOut(new PrintStream(new PrintStream(new File("LogChatbot.txt"))));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }*/
+        }
 
         JFrame frame = new JFrame("Chatbox");
         frame.setContentPane(new Chatbox().mainPanel);
