@@ -2495,6 +2495,74 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("ram", "grande"))),
                 "Buscando resultados....")); idp++;
 
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("normal"),  new Lema("ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("ram", "normal"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("pequenio"),  new Lema("ram"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("ram", "pequenio"))),
+                "Buscando resultados....")); idp++;
+
+        //GPU
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("grande"),  new Lema("gpu"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("gpu", "grande"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("normal"),  new Lema("gpu"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("gpu", "normal"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("pequenio"),  new Lema("gpu"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("gpu", "pequenio"))),
+                "Buscando resultados....")); idp++;
+
+        //PRECIO
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("grande"),  new Lema("precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("precio", "grande"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("normal"),  new Lema("precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("precio", "normal"))),
+                "Buscando resultados....")); idp++;
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("pequenio"),  new Lema("precio"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("precio", "pequenio"))),
+                "Buscando resultados....")); idp++;
+
+
+
     }
     //
 

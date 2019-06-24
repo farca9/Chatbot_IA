@@ -18,8 +18,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1616">
-              <caret line="208" selection-start-line="208" selection-end-line="208" />
+            <state relative-caret-position="311">
+              <caret line="2308" column="50" selection-start-line="2308" selection-start-column="50" selection-end-line="2308" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="method#cargarReglasGenerales#0;class#MP#0" />
+                <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
+                <element signature="method#cargarReglasCelulares#0;class#MP#0" />
+                <element signature="method#cargarReglasTablets#0;class#MP#0" />
+                <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
+                <element signature="method#cargarReglasComputadorasVendedor#0;class#MP#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,7 +207,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6953000" />
+    <option name="totallyTimeSpent" value="6368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -265,33 +282,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1616">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/Chatbox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="137" column="40" selection-start-line="137" selection-start-column="40" selection-end-line="137" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/ChatbotCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="165" column="31" selection-start-line="165" selection-start-column="31" selection-end-line="165" selection-end-column="31" />
+        <state relative-caret-position="311">
+          <caret line="2308" column="50" selection-start-line="2308" selection-start-column="50" selection-end-line="2308" selection-end-column="50" />
           <folding>
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="method#generarNoComprendo#0;class#ChatbotCore#0" />
-            <element signature="method#hacerRecomendacion#0;class#ChatbotCore#0" />
-            <element signature="method#sendAndReceive#0;class#ChatbotCore#0" />
-            <element signature="e#3272#3325#1" />
-            <element signature="e#3453#3579#1" />
-            <element signature="e#3616#3669#1" />
-            <element signature="e#3785#3849#1" />
-            <element signature="method#solveConflict#0;class#ChatbotCore#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="method#cargarReglasGenerales#0;class#MP#0" />
+            <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
+            <element signature="method#cargarReglasCelulares#0;class#MP#0" />
+            <element signature="method#cargarReglasTablets#0;class#MP#0" />
+            <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
+            <element signature="method#cargarReglasComputadorasVendedor#0;class#MP#0" />
           </folding>
         </state>
       </provider>
