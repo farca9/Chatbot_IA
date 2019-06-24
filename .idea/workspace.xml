@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="893" column="59" lean-forward="true" selection-start-line="893" selection-start-column="59" selection-end-line="893" selection-end-column="59" />
+            <state relative-caret-position="311">
+              <caret line="2308" column="50" selection-start-line="2308" selection-start-column="50" selection-end-line="2308" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#301#302#0" expanded="true" />
@@ -31,6 +31,7 @@
                 <element signature="e#741#742#0" expanded="true" />
                 <element signature="method#cargarReglasGenerales#0;class#MP#0" />
                 <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
+                <element signature="method#cargarReglasCelulares#0;class#MP#0" />
                 <element signature="method#cargarReglasTablets#0;class#MP#0" />
                 <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
                 <element signature="method#cargarReglasComputadorasVendedor#0;class#MP#0" />
@@ -193,7 +194,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6122000" />
+    <option name="totallyTimeSpent" value="6368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1154" height="830" extended-state="0" />
@@ -270,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="893" column="59" lean-forward="true" selection-start-line="893" selection-start-column="59" selection-end-line="893" selection-end-column="59" />
+        <state relative-caret-position="311">
+          <caret line="2308" column="50" selection-start-line="2308" selection-start-column="50" selection-end-line="2308" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#301#302#0" expanded="true" />
@@ -284,6 +285,7 @@
             <element signature="e#741#742#0" expanded="true" />
             <element signature="method#cargarReglasGenerales#0;class#MP#0" />
             <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
+            <element signature="method#cargarReglasCelulares#0;class#MP#0" />
             <element signature="method#cargarReglasTablets#0;class#MP#0" />
             <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
             <element signature="method#cargarReglasComputadorasVendedor#0;class#MP#0" />
