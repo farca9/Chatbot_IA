@@ -24,8 +24,6 @@ public class MP {
 
     }
 
-    private void cargarReglasVendedor() {
-    }
 
     public void add(Regla regla){
         reglas.add(regla);
@@ -61,6 +59,7 @@ public class MP {
                 "Es usted cliente o vendedor?")); idp++;
 
         //Respuesta, es vendedor o cliente
+        //Cliente input
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(Arrays.asList(new Lema("cliente"))),
@@ -68,16 +67,7 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "user"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "cliente"))),
                 "Bienvenido cliente")); idp++;
-
-        reglas.add(new Regla(
-                idp,
-                new ArrayList<>(Arrays.asList(new Lema("vendedor"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ask", "user"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "user"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))), //TODO ADD
-                "Bienvenido vendedor, ingrese que producto quiere y que caracteristica")); idp++;
-
-        //
+        //Cliente inner
         reglas.add(new Regla(
                 idp,
                 new ArrayList<>(),
@@ -85,6 +75,24 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"), new MTEntry("ans", "tipoProducto"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ask", "tipoProducto"))),
                 "Que producto esta buscando?")); idp++;
+
+        //Vendedor input
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ask", "user"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "user"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                "Bienvenido vendedor")); idp++;
+
+        //Vendedor inner
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                "Ingrese que tipo de producto busca y con que caracteristica en particular")); idp++;
 
         reglas.add(new Regla(
                 idp,
@@ -2288,6 +2296,18 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "precio"), new MTEntry("precio", "pequenio"))),
                 "Buenisimo! Buscare televisores con precios bajos")); idp++;
+    }
+
+    private void cargarReglasVendedor() {
+
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"),new Lema("ram"),new Lema("mucha"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vend"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                "Buscando resultados....")); idp++;
+
     }
     //
 

@@ -131,6 +131,10 @@ public class ChatbotCore {
         Regla reglaSeleccionada = this.solveConflict(reglasActivas);
         System.out.println("Regla seleccionada: "+reglaSeleccionada.toString());
 
+        if(reglaSeleccionada==null){
+            throw new NoRulesException();
+        }
+
         //Ejecucion
         output=reglaSeleccionada.execute();
 
@@ -165,6 +169,9 @@ public class ChatbotCore {
         //Resolucion de conflictos
         Regla reglaSeleccionada = this.solveConflict(reglasActivas);
         System.out.println("Inner Regla seleccionada: "+reglaSeleccionada.toString());
+        if(reglaSeleccionada==null){
+            throw new NoRulesException();
+        }
 
         //Ejecucion
         output=reglaSeleccionada.execute();
