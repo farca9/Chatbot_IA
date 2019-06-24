@@ -20,7 +20,12 @@ Inner Regla seleccionada: Regla 5) L[] MT<user(vendedor), !vend(in)> --> MT+<> '
 
 -- Iteracion N°4
 MT Actual: [ask(user), user(vendedor)]
-Reglas activas: R#230 
+<<<<<<< HEAD
+Reglas activas: R#312 
+Criterios de resolucion utilizados: (Especificidad, Novedad)
+Regla seleccionada: Regla 312) L[televisor, led] MT<user(vendedor), !vend(in)> --> MT+<vend(in), tipoProducto(televisor), tecnologia(led)> ''Buscando resultados....''
+=======
+Reglas activas: R#316 
 Criterios de resolucion utilizados: (Especificidad, Novedad)
 Regla seleccionada: Regla 230) L[notebook, i3] MT<user(vendedor), !vend(in)> --> MT+<vend(in), tipoProducto(notebook), cpu(i3)> ''Buscando resultados....''
 
@@ -32,6 +37,7 @@ MT Actual: []
 Inner Reglas activas: R#1 
 Criterios de resolucion utilizados: (Especificidad)
 Inner Regla seleccionada: Regla 1) L[] MT<!ask(user), !ans(user)> --> MT+<ask(user)> ''Es usted cliente o vendedor?''
+>>>>>>> develop
 
 -- Iteracion N°2
 MT Actual: [ask(user)]
