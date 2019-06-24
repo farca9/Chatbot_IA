@@ -2853,7 +2853,7 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new Lema("tablet"), new Lema("pantalla"), new Lema("grande"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("pantalla", "grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("dimPantalla", "grande"))),
                 "Buscando resultados....")); idp++;
 
         reglas.add(new Regla(
@@ -2861,15 +2861,15 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new Lema("tablet"), new Lema("pantalla"), new Lema("normal"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("pantalla", "normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("dimPantalla", "normal"))),
                 "Buscando resultados....")); idp++;
 
         reglas.add(new Regla(
                 idp,
-                new ArrayList<>(Arrays.asList(new Lema("tablet"), new Lema("pantalla"), new Lema("pequenia"))),
+                new ArrayList<>(Arrays.asList(new Lema("tablet"), new Lema("pantalla"), new Lema("pequenio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("pantalla", "pequenia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("dimPantalla", "pequenio"))),
                 "Buscando resultados....")); idp++;
 
 
@@ -2892,10 +2892,10 @@ public class MP {
 
         reglas.add(new Regla(
                 idp,
-                new ArrayList<>(Arrays.asList(new Lema("tablet"), new Lema("ram"), new Lema("pequenia"))),
+                new ArrayList<>(Arrays.asList(new Lema("tablet"), new Lema("ram"), new Lema("pequenio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("ram", "pequenia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("ram", "pequenio"))),
                 "Buscando resultados....")); idp++;
 
 
@@ -2918,10 +2918,10 @@ public class MP {
 
         reglas.add(new Regla(
                 idp,
-                new ArrayList<>(Arrays.asList(new Lema("tablet"), new Lema("almacenamiento"), new Lema("pequenia"))),
+                new ArrayList<>(Arrays.asList(new Lema("tablet"), new Lema("almacenamiento"), new Lema("pequenio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("almacenamiento", "pequenia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "tablet"), new MTEntry("almacenamiento", "pequenio"))),
                 "Buscando resultados....")); idp++;
 
         //RES CAMARA
@@ -3053,7 +3053,7 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new Lema("televisor"), new Lema("pantalla"), new Lema("grande"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "televisor"), new MTEntry("pantalla", "grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "televisor"), new MTEntry("dimPantalla", "grande"))),
                 "Buscando resultados....")); idp++;
 
         reglas.add(new Regla(
@@ -3061,15 +3061,15 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new Lema("televisor"), new Lema("pantalla"), new Lema("normal"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "televisor"), new MTEntry("pantalla", "normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "televisor"), new MTEntry("dimPantalla", "normal"))),
                 "Buscando resultados....")); idp++;
 
         reglas.add(new Regla(
                 idp,
-                new ArrayList<>(Arrays.asList(new Lema("televisor"), new Lema("pantalla"), new Lema("pequenia"))),
+                new ArrayList<>(Arrays.asList(new Lema("televisor"), new Lema("pantalla"), new Lema("pequenio"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "televisor"), new MTEntry("pantalla", "pequenia"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto", "televisor"), new MTEntry("dimPantalla", "pequenio"))),
                 "Buscando resultados....")); idp++;
 
 
