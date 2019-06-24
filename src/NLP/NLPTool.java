@@ -69,7 +69,7 @@ public class NLPTool {
         lemas.add(new Lema("precio", new ArrayList<>(Arrays.asList("gastar","presupuesto","monto","estiro","gasto","$"))));
         lemas.add(new Lema("camara", new ArrayList<>(Arrays.asList("resolucion camara"))));
 
-        lemas.add(new Lema("grande", new ArrayList<>(Arrays.asList("gran","amplia","larga","extensa","mucho","alto","abundante","bastante","alta","ilimitado", "mucha", "gigante"))));
+        lemas.add(new Lema("grande", new ArrayList<>(Arrays.asList("gran","amplia","larga","extensa","mucho","alto","abundante","bastante","alta","ilimitado", "mucha", "gigante", "caro"))));
         lemas.add(new Lema("normal", new ArrayList<>(Arrays.asList("media","normal","estandar","promedio","regular","medio","suficiente"))));
         lemas.add(new Lema("pequenio", new ArrayList<>(Arrays.asList("pequeña","pequeño","reducida","limitado","escaso","corta","economica","barata","economico","barato", "poca", "limitada","escasa", "poco", "no grande", "pequenia", "pequenio","chica","chico", "bajo", "baja"))));
 
