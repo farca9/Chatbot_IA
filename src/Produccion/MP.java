@@ -2361,7 +2361,7 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("apple"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("apple", "asus"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "apple"))),
                 "Buscando resultados....")); idp++;
 
         reglas.add(new Regla(
@@ -2369,7 +2369,7 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("bangho"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("bangho", "asus"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "bangho"))),
                 "Buscando resultados....")); idp++;
 
         reglas.add(new Regla(
@@ -2377,7 +2377,7 @@ public class MP {
                 new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("dell"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("dell", "asus"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "dell"))),
                 "Buscando resultados....")); idp++;
 
 
