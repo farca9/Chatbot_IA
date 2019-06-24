@@ -21,7 +21,6 @@ public class MP {
     private MP(){
         reglas=new ArrayList<>();
         cargarReglas();
-
     }
 
     private void cargarReglasVendedor() {

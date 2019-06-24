@@ -20,6 +20,6 @@ Inner Regla seleccionada: Regla 5) L[] MT<user(vendedor), !vend(in)> --> MT+<> '
 
 -- Iteracion N°4
 MT Actual: [ask(user), user(vendedor)]
-Reglas activas: R#266 
+Reglas activas: R#231 
 Criterios de resolucion utilizados: (Especificidad, Novedad)
-Regla seleccionada: Regla 266) L[celular, camara, grande] MT<user(vendedor), !vend(in)> --> MT+<vend(in), tipoProducto(celular), camara(grande)> ''Buscando resultados....''
+Regla seleccionada: Regla 231) L[notebook, i5] MT<user(vendedor), !vend(in)> --> MT+<vend(in), tipoProducto(notebook), cpu(i5)> ''Buscando resultados....''

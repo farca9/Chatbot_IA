@@ -12,6 +12,7 @@ import Produccion.MP;
 import Produccion.MT;
 import Produccion.MTEntry;
 import Produccion.Regla;
+import UI.Chatbox;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -52,8 +53,10 @@ public class ChatbotCore {
 
     public String hacerRecomendacion(){
 
+        Chatbox.instance.getSendButton().setEnabled(false);
+        Chatbox.instance.getRecomendarButton().setEnabled(false);
+
         //Cuando el cliente presiona el boton de recomendar resultados
-        //Se asume que cuanto mucho se ofrecen 3 productos
         List<MTEntry> mt = MT.getInstance().getElementosMT();
         int elementos = 0;
         DB dbInstance = DB.getInstance();

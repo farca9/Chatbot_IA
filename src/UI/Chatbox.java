@@ -17,6 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Chatbox {
+    public static Chatbox instance;
     private JButton sendButton;
     private JTextArea inputTextArea;
     public JPanel mainPanel;
@@ -28,6 +29,13 @@ public class Chatbox {
     private Style styleUser=chatTextPane.addStyle("user",null);
     private Style styleBot=chatTextPane.addStyle("bot",null);
 
+    public JButton getSendButton() {
+        return sendButton;
+    }
+
+    public JButton getRecomendarButton() {
+        return recomendarButton;
+    }
 
     private void createUIComponents() {
 
@@ -44,6 +52,8 @@ public class Chatbox {
 
 
     public Chatbox(){
+        instance=this;
+
         this.createUIComponents();
 
         System.out.println("========= INICIO EJECUCION");
