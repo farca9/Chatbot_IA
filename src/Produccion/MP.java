@@ -2510,27 +2510,20 @@ public class MP {
         //GPU
         reglas.add(new Regla(
                 idp,
-                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("grande"),  new Lema("gpu"))),
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("integrada"),  new Lema("gpu"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("gpu", "grande"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("gpu", "integrada"))),
                 "Buscando resultados....")); idp++;
 
         reglas.add(new Regla(
                 idp,
-                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("normal"),  new Lema("gpu"))),
+                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("dedicada"),  new Lema("gpu"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("gpu", "normal"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("gpu", "dedicada"))),
                 "Buscando resultados....")); idp++;
 
-        reglas.add(new Regla(
-                idp,
-                new ArrayList<>(Arrays.asList(new Lema("notebook"), new Lema("pequenio"),  new Lema("gpu"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"),new MTEntry("tipoProducto", "notebook"), new MTEntry("gpu", "pequenio"))),
-                "Buscando resultados....")); idp++;
 
         //PRECIO
         reglas.add(new Regla(
