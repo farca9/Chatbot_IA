@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc84403e-41cd-48c1-9a1f-9bd841bc858f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/LogChatbot.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LogChatbot.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produccion/MP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produccion/MP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NLP/NLPTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NLP/NLPTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,20 +32,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+            <state relative-caret-position="264">
+              <caret line="73" column="308" selection-start-line="73" selection-start-column="308" selection-end-line="73" selection-end-column="308" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="2525" selection-start-line="2525" selection-end-line="2525" />
+            <state relative-caret-position="295">
+              <caret line="2757" column="112" lean-forward="true" selection-start-line="2757" selection-start-column="112" selection-end-line="2757" selection-end-column="112" />
               <folding>
                 <element signature="method#cargarReglas#0;class#MP#0" />
                 <element signature="method#cargarReglasGenerales#0;class#MP#0" />
@@ -54,8 +53,8 @@
                 <element signature="method#cargarReglasCelulares#0;class#MP#0" />
                 <element signature="method#cargarReglasTablets#0;class#MP#0" />
                 <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
+                <element signature="method#cargarReglasComputadorasVendedor#0;class#MP#0" />
                 <element signature="method#cargarReglasCelularesVendedor#0;class#MP#0" />
-                <element signature="method#cargarReglasTabletsVendedor#0;class#MP#0" />
                 <element signature="method#cargarReglasTelevisoresVendedor#0;class#MP#0" />
               </folding>
             </state>
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state>
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -79,10 +78,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/NLP/NLPTool.java" />
         <option value="$PROJECT_DIR$/src/Produccion/MP.java" />
+        <option value="$PROJECT_DIR$/src/NLP/NLPTool.java" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="width" value="1443" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -177,7 +181,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="600000" />
+    <option name="totallyTimeSpent" value="881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -231,13 +235,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -252,17 +249,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+        <state>
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Notebook.java">
+    <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2125">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="295">
+          <caret line="2757" column="112" lean-forward="true" selection-start-line="2757" selection-start-column="112" selection-end-line="2757" selection-end-column="112" />
+          <folding>
+            <element signature="method#cargarReglas#0;class#MP#0" />
+            <element signature="method#cargarReglasGenerales#0;class#MP#0" />
+            <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
+            <element signature="method#cargarReglasCelulares#0;class#MP#0" />
+            <element signature="method#cargarReglasTablets#0;class#MP#0" />
+            <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
+            <element signature="method#cargarReglasComputadorasVendedor#0;class#MP#0" />
+            <element signature="method#cargarReglasCelularesVendedor#0;class#MP#0" />
+            <element signature="method#cargarReglasTelevisoresVendedor#0;class#MP#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -273,21 +281,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Notebook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="2525" selection-start-line="2525" selection-end-line="2525" />
-          <folding>
-            <element signature="method#cargarReglas#0;class#MP#0" />
-            <element signature="method#cargarReglasGenerales#0;class#MP#0" />
-            <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
-            <element signature="method#cargarReglasCelulares#0;class#MP#0" />
-            <element signature="method#cargarReglasTablets#0;class#MP#0" />
-            <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
-            <element signature="method#cargarReglasCelularesVendedor#0;class#MP#0" />
-            <element signature="method#cargarReglasTabletsVendedor#0;class#MP#0" />
-            <element signature="method#cargarReglasTelevisoresVendedor#0;class#MP#0" />
-          </folding>
+        <state relative-caret-position="-2125">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="73" column="308" selection-start-line="73" selection-start-column="308" selection-end-line="73" selection-end-column="308" />
         </state>
       </provider>
     </entry>
