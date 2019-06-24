@@ -96,7 +96,7 @@ public class MP {
                 idp,
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
-                new ArrayList<>(),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend","in"))),
                 new ArrayList<>(),
                 "Ingrese que tipo de producto busca y con que caracteristica en particular")); idp++;
 
@@ -2306,6 +2306,16 @@ public class MP {
 
     public void cargarReglasComputadorasVendedor(){
 
+        System.out.println(idp);
+        reglas.add(new Regla(
+                idp,
+                new ArrayList<>(Arrays.asList(new Lema("notebook"),new Lema("i5"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("user", "vendedor"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("vend", "in"), new MTEntry("tipoProducto","notebook"), new MTEntry("cpu","i5"))),
+                "Buscando resultados....")); idp++;
+
+        /*
         //MARCA
         reglas.add(new Regla(
                 idp,
@@ -2379,7 +2389,7 @@ public class MP {
                 new ArrayList<>(),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "notebook"), new MTEntry("marca", "dell"))),
                 "")); idp++;
-
+        */
     }
     //
 
