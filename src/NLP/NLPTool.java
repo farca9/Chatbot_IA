@@ -71,7 +71,7 @@ public class NLPTool {
 
         lemas.add(new Lema("grande", new ArrayList<>(Arrays.asList("gran","amplia","larga","extensa","mucho","alto","abundante","bastante","alta","ilimitado", "mucha", "gigante", "caro", "bueno", "buena", "excelente"))));
         lemas.add(new Lema("normal", new ArrayList<>(Arrays.asList("media","normal","estandar","promedio","regular","medio","suficiente"))));
-        lemas.add(new Lema("pequenio", new ArrayList<>(Arrays.asList("pequeña","pequeño","reducida","limitado","escaso","corta","economica","barata","economico","barato", "poca", "limitada","escasa", "poco", "no grande", "pequenia", "pequenio","chica","chico", "bajo", "baja", "bueno", "buena", "mala", "malo"))));
+        lemas.add(new Lema("pequenio", new ArrayList<>(Arrays.asList("pequeña","pequeño","reducida","limitado","escaso","corta","economica","barata","economico","barato", "poca", "limitada","escasa", "poco", "no grande", "pequenia", "pequenio","chica","chico", "bajo", "baja", "mala", "malo"))));
 
         lemas.add(new Lema("gpu", new ArrayList<>(Arrays.asList("placa de video","graficas", "placa"))));
         lemas.add(new Lema("integrada", new ArrayList<>(Arrays.asList("intel graphics","amd"))));
