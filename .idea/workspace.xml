@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="741b9551-1580-4605-a9d4-b80af9b08d8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogChatbot.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LogChatbot.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NLP/NLPTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NLP/NLPTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Produccion/MP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produccion/MP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,15 +29,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="2966" column="143" selection-start-line="2966" selection-start-column="143" selection-end-line="2966" selection-end-column="143" />
+            <state relative-caret-position="267">
+              <caret line="3139" column="146" selection-start-line="3139" selection-start-column="146" selection-end-line="3139" selection-end-column="146" />
               <folding>
                 <element signature="method#cargarReglas#0;class#MP#0" />
                 <element signature="method#cargarReglasGenerales#0;class#MP#0" />
                 <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
                 <element signature="method#cargarReglasCelulares#0;class#MP#0" />
+                <element signature="method#cargarReglasTablets#0;class#MP#0" />
                 <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
                 <element signature="method#cargarReglasComputadorasVendedor#0;class#MP#0" />
+                <element signature="method#cargarReglasCelularesVendedor#0;class#MP#0" />
+                <element signature="method#cargarReglasTabletsVendedor#0;class#MP#0" />
               </folding>
             </state>
           </provider>
@@ -58,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="714">
               <caret line="73" column="274" selection-start-line="73" selection-start-column="274" selection-end-line="73" selection-end-column="274" />
             </state>
           </provider>
@@ -161,12 +161,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561345078197</updated>
-      <workItem from="1561345079507" duration="1378000" />
+      <workItem from="1561345079507" duration="1998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1378000" />
+    <option name="totallyTimeSpent" value="1998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1154" height="830" extended-state="0" />
@@ -206,6 +206,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Produccion/MP.java</url>
+          <line>1862</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -219,7 +231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NLP/NLPTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="714">
           <caret line="73" column="274" selection-start-line="73" selection-start-column="274" selection-end-line="73" selection-end-column="274" />
         </state>
       </provider>
@@ -233,15 +245,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Produccion/MP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="2966" column="143" selection-start-line="2966" selection-start-column="143" selection-end-line="2966" selection-end-column="143" />
+        <state relative-caret-position="267">
+          <caret line="3139" column="146" selection-start-line="3139" selection-start-column="146" selection-end-line="3139" selection-end-column="146" />
           <folding>
             <element signature="method#cargarReglas#0;class#MP#0" />
             <element signature="method#cargarReglasGenerales#0;class#MP#0" />
             <element signature="method#cargarReglasComputadoras#0;class#MP#0" />
             <element signature="method#cargarReglasCelulares#0;class#MP#0" />
+            <element signature="method#cargarReglasTablets#0;class#MP#0" />
             <element signature="method#cargarReglasTelevisores#0;class#MP#0" />
             <element signature="method#cargarReglasComputadorasVendedor#0;class#MP#0" />
+            <element signature="method#cargarReglasCelularesVendedor#0;class#MP#0" />
+            <element signature="method#cargarReglasTabletsVendedor#0;class#MP#0" />
           </folding>
         </state>
       </provider>
