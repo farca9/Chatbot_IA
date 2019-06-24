@@ -124,7 +124,6 @@ public class Chatbox {
                         ex.printStackTrace();
                     }
 
-
                     inputTextArea.setText("");
                 }
 
@@ -135,7 +134,9 @@ public class Chatbox {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                System.out.println("\n\n========= INICIO EJECUCION");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("========= INICIO EJECUCION");
 
                 inputTextArea.setText("");
                 chatTextPane.setText("");
