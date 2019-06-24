@@ -79,14 +79,14 @@ public class Regla {
     @Override
     public String toString() {
         String retorno="";
-        retorno+="R#"+id+" [";
+        retorno+="Regla "+id+") L[";
         boolean e1=true, e3=true, e4=true;
         for(Lema l: lemasCondicion){
             retorno+=l.getConcepto()+", ";
             e1=false;
         }
         if(!e1) retorno=retorno.substring(0,retorno.length()-2);
-        retorno+="] <";
+        retorno+="] MT<";
         for(MTEntry mtEntry: mtEntriesPresente){
             retorno+=mtEntry.toString()+", ";
         }
@@ -95,13 +95,13 @@ public class Regla {
             e3=false;
         }
         if(!e3)retorno=retorno.substring(0,retorno.length()-2);
-        retorno+="> --> <";
+        retorno+="> --> MT+<";
         for(MTEntry mtEntry: mtEntriesConsecuencia){
             retorno+=mtEntry.toString()+", ";
             e4=false;
         }
         if(!e4)retorno=retorno.substring(0,retorno.length()-2);
-        retorno+="> '"+mensajeOutput+"'";
+        retorno+="> ''"+mensajeOutput+"''";
         return retorno;
 
 

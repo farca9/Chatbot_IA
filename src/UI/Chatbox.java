@@ -46,6 +46,7 @@ public class Chatbox {
     public Chatbox(){
         this.createUIComponents();
 
+        System.out.println("========= INICIO EJECUCION");
         sendButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -134,10 +135,13 @@ public class Chatbox {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                System.out.println("\n\n========= INICIO EJECUCION");
+
                 inputTextArea.setText("");
                 chatTextPane.setText("");
 
                 ChatbotCore.getInstance().clearChat();
+                ChatbotCore.nroIteraciones=1;
 
                 sendButton.setEnabled(true);
                 recomendarButton.setEnabled(true);

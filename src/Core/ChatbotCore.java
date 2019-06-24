@@ -21,6 +21,7 @@ import java.util.Random;
 
 public class ChatbotCore {
 
+    public static int nroIteraciones=1;
     private Regla reglaPrevia=null;
 
     //Singleton
@@ -102,7 +103,6 @@ public class ChatbotCore {
         //NLP -> Lemas
         NLPTool nlp = NLPTool.getInstance();
         List<Lema> lemasDetectados=nlp.detectarLemas(input);
-        System.out.println(lemasDetectados);
         if(lemasDetectados.isEmpty()){
             throw new NoLemasException();
         }
@@ -121,6 +121,8 @@ public class ChatbotCore {
         }
 
         System.out.println("");
+        System.out.println("-- Iteracion N°"+nroIteraciones);
+        System.out.println("MT Actual: "+MT.getInstance().getElementosMT().toString());
         System.out.print("Reglas activas: ");
         for(Regla r: reglasActivas) {
             System.out.print(r.toShortString()+" ");
@@ -137,6 +139,8 @@ public class ChatbotCore {
 
         //Ejecucion
         output=reglaSeleccionada.execute();
+
+        nroIteraciones++;
 
         return output;
 
@@ -159,6 +163,8 @@ public class ChatbotCore {
         }
 
         System.out.println("");
+        System.out.println("-- Iteracion N°"+nroIteraciones);
+        System.out.println("MT Actual: "+MT.getInstance().getElementosMT().toString());
         System.out.print("Inner Reglas activas: ");
         for(Regla r: reglasActivas) {
             System.out.print(r.toShortString()+" ");
@@ -175,6 +181,8 @@ public class ChatbotCore {
 
         //Ejecucion
         output=reglaSeleccionada.execute();
+
+        nroIteraciones++;
 
         return output;
 
