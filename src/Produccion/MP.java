@@ -2005,18 +2005,18 @@ public class MP {
         //KEN BROWN
         reglas.add(new Regla(
                 idp,
-                new ArrayList<>(Arrays.asList(new Lema("kenbrown"))),
+                new ArrayList<>(Arrays.asList(new Lema("ken brown"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"), new MTEntry("user", "cliente"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "kenbrown"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "ken brown"))),
                 "Perfecto. Buscare marcas Ken Brown")); idp++;
 
         reglas.add(new Regla(
                 idp,
-                new ArrayList<>(Arrays.asList(new Lema("kenbrown"))),
+                new ArrayList<>(Arrays.asList(new Lema("ken brown"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("tipoProducto", "televisor"), new MTEntry("ask", "marca"), new MTEntry("user", "cliente"))),
                 new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"))),
-                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "kenbrown"))),
+                new ArrayList<>(Arrays.asList(new MTEntry("ans", "marca"), new MTEntry("marca", "ken brown"))),
                 "Buenisimo! Buscare televisores Ken Brown")); idp++;
 
         //LG
