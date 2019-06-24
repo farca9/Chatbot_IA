@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UI.Chatbox">
-  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="1209" height="733"/>
+      <xy x="20" y="20" width="1209" height="862"/>
     </constraints>
     <properties>
+      <autoscrolls value="false"/>
       <foreground color="-12500671"/>
     </properties>
     <border type="none">
@@ -14,52 +15,106 @@
     <children>
       <component id="14a44" class="javax.swing.JButton" binding="sendButton" default-binding="true">
         <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Send"/>
         </properties>
       </component>
-      <component id="fcb7b" class="javax.swing.JTextArea" binding="inputTextArea">
-        <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="600" height="60"/>
-          </grid>
-        </constraints>
-        <properties>
-          <lineWrap value="false"/>
-        </properties>
-      </component>
-      <component id="b2c4e" class="javax.swing.JTextArea" binding="chatTextArea">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="8" fill="2" indent="0" use-parent-layout="false">
-            <preferred-size width="600" height="600"/>
-          </grid>
-        </constraints>
-        <properties>
-          <editable value="false"/>
-          <lineWrap value="true"/>
-          <text value="Bienvenido al Asistente de Compras!!&#10;"/>
-        </properties>
-      </component>
-      <hspacer id="303f9">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="-1" height="10"/>
-            <preferred-size width="-1" height="10"/>
-            <maximum-size width="-1" height="10"/>
-          </grid>
-        </constraints>
-      </hspacer>
       <hspacer id="37e92">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="5" height="-1"/>
             <preferred-size width="5" height="-1"/>
             <maximum-size width="5" height="-1"/>
           </grid>
         </constraints>
       </hspacer>
+      <scrollpane id="e134f">
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="600" height="600"/>
+            <preferred-size width="600" height="600"/>
+            <maximum-size width="600" height="600"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="empty"/>
+        <children>
+          <component id="96003" class="javax.swing.JTextPane" binding="chatTextPane">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+              <font name="Consolas" size="16" style="1"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="1f40b">
+        <constraints>
+          <grid row="4" column="0" row-span="2" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="600" height="60"/>
+            <preferred-size width="600" height="60"/>
+            <maximum-size width="600" height="60"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="empty"/>
+        <children>
+          <component id="fcb7b" class="javax.swing.JTextArea" binding="inputTextArea">
+            <constraints/>
+            <properties>
+              <lineWrap value="false"/>
+              <text value="Escriba su mensaje aquí..."/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <hspacer id="303f9">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="10"/>
+            <preferred-size width="620" height="10"/>
+            <maximum-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="a1ded" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <icon value="res/banner.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="458b1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="res/bernard.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="3311c" class="javax.swing.JButton" binding="recomendarButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Recomendación"/>
+        </properties>
+      </component>
+      <component id="f3b3a" class="javax.swing.JButton" binding="clearButton">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Clear"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

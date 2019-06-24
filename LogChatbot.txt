@@ -1,0 +1,73 @@
+========= INICIO EJECUCION
+
+-- Iteracion N°1
+MT Actual: []
+Inner Reglas activas: R#1 
+Criterios de resolucion utilizados: (Especificidad)
+Inner Regla seleccionada: Regla 1) L[] MT<!ask(user), !ans(user)> --> MT+<ask(user)> ''Es usted cliente o vendedor?''
+
+-- Iteracion N°2
+MT Actual: [ask(user)]
+Reglas activas: R#2 
+Criterios de resolucion utilizados: (Especificidad, Novedad)
+Regla seleccionada: Regla 2) L[cliente] MT<ask(user), !ans(user)> --> MT+<user(cliente)> ''Bienvenido cliente''
+
+-- Iteracion N°3
+MT Actual: [ask(user), user(cliente)]
+Inner Reglas activas: R#3 
+Criterios de resolucion utilizados: (Especificidad, Novedad)
+Inner Regla seleccionada: Regla 3) L[] MT<user(cliente), !ask(tipoProducto), !ans(tipoProducto)> --> MT+<ask(tipoProducto)> ''Que producto esta buscando?''
+
+-- Iteracion N°4
+MT Actual: [ask(user), user(cliente), ask(tipoProducto)]
+Reglas activas: R#6 R#7 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Regla seleccionada: Regla 7) L[notebook] MT<user(cliente), ask(tipoProducto), !ans(tipoProducto)> --> MT+<ans(tipoProducto), tipoProducto(notebook)> ''Buenisimo! Buscare notebooks para usted''
+
+-- Iteracion N°5
+MT Actual: [ask(user), user(cliente), ask(tipoProducto), ans(tipoProducto), tipoProducto(notebook)]
+Inner Reglas activas: R#14 R#15 R#16 R#17 R#18 R#19 R#20 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Inner Regla seleccionada: Regla 19) L[] MT<tipoProducto(notebook), user(cliente), !ans(gpu), !ask(gpu)> --> MT+<ask(gpu)> ''Quiere GPU integrada o dedicada?''
+
+
+========= INICIO EJECUCION
+
+-- Iteracion N°1
+MT Actual: []
+Inner Reglas activas: R#1 
+Criterios de resolucion utilizados: (Especificidad)
+Inner Regla seleccionada: Regla 1) L[] MT<!ask(user), !ans(user)> --> MT+<ask(user)> ''Es usted cliente o vendedor?''
+
+-- Iteracion N°2
+MT Actual: [ask(user)]
+Reglas activas: R#2 
+Criterios de resolucion utilizados: (Especificidad, Novedad)
+Regla seleccionada: Regla 2) L[cliente] MT<ask(user), !ans(user)> --> MT+<user(cliente)> ''Bienvenido cliente''
+
+-- Iteracion N°3
+MT Actual: [ask(user), user(cliente)]
+Inner Reglas activas: R#3 
+Criterios de resolucion utilizados: (Especificidad, Novedad)
+Inner Regla seleccionada: Regla 3) L[] MT<user(cliente), !ask(tipoProducto), !ans(tipoProducto)> --> MT+<ask(tipoProducto)> ''Que producto esta buscando?''
+
+-- Iteracion N°4
+MT Actual: [ask(user), user(cliente), ask(tipoProducto)]
+Reglas activas: R#12 R#13 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Regla seleccionada: Regla 12) L[televisor] MT<user(cliente), ask(tipoProducto), !ans(tipoProducto)> --> MT+<ans(tipoProducto), tipoProducto(televisor)> ''Perfecto, buscaremos televisores''
+
+-- Iteracion N°5
+MT Actual: [ask(user), user(cliente), ask(tipoProducto), ans(tipoProducto), tipoProducto(televisor)]
+Inner Reglas activas: R#183 R#184 R#185 R#186 R#187 
+Criterios de resolucion utilizados: (Especificidad, Novedad, Aleatoriedad)
+Inner Regla seleccionada: Regla 185) L[] MT<tipoProducto(televisor), user(cliente), !ans(tecnologia), !ask(tecnologia)> --> MT+<ask(tecnologia)> ''Que tecnologia desea (SMART o LED)?''
+
+
+========= INICIO EJECUCION
+
+-- Iteracion N°1
+MT Actual: []
+Inner Reglas activas: R#1 
+Criterios de resolucion utilizados: (Especificidad)
+Inner Regla seleccionada: Regla 1) L[] MT<!ask(user), !ans(user)> --> MT+<ask(user)> ''Es usted cliente o vendedor?''
